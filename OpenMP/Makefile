@@ -1,5 +1,5 @@
 all:
-	g++ -fopenmp sample.cpp -o out
+	g++ -fopenmp OMPUtil.cpp sample.cpp -o out
 	./out
 bench:
 	./out &

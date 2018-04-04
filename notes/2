@@ -1,0 +1,41 @@
+Simple openMP:
+
+- Open Multi-Processor
+- Part of the compiler
+- One of the best parallel programming setups (abstracts many paradigms)
+
+- Mostly pragmas:
+ - Pragma omp directive [clause]
+ - compiler: g++ -o proj proj.cpp -lm -fopenmp
+ - VB: 
+  - Go to the Project menu → Project Properties
+  - Change the setting Configuration Properties → C/C++ → Language → OpenMP Support to "Yes (/openmp)"
+
+- Find how many threads are available:
+ - int numthreads = omp_get_num_threads( );
+
+- Generally use 4 threads
+ - omp_set_num_threads( num );
+ - For assignments you need 1 and 4; could be 1, 2, 4, 8, 16, ...
+
+- Use #define: NUMT
+#include <omp.h>
+. . .
+omp_set_num_threads( NUMT );
+. . .
+#pragma omp parallel for
+for( int i = 0; i < arraySize; i++ )
+{
+. . .
+}
+
+- Parallel for runs each instance of forloop on a different thread
+
+- Parallel programming -> identical operations, large data size
+
+- utilities class to be coded:
+ - omp check
+ - Timer
+ - Mega-Multiplier
+ - Calculate speedup: 
+  - S = (Execution time with one thread) / (Execution time with four threads)
