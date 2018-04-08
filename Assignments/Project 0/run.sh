@@ -1,6 +1,6 @@
 #!/bin/bash
-echo "Compiling..."
-make
+#echo "Compiling..."
+#make
 echo "Running the code with 1 thread..."
 ./out 1 s > tmp1
 ./out 1

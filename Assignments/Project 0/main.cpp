@@ -8,8 +8,8 @@
 
 #define NUMT	         4
 #define DEBUG 0
-#define ARRAYSIZE       50000	// you decide
-#define NUMTRIES        50000	// you decide
+#define ARRAYSIZE       100000	// you decide
+#define NUMTRIES        100000	// you decide
 
 float A[ARRAYSIZE];
 float B[ARRAYSIZE];

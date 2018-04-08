@@ -1,5 +1,6 @@
 all:
 	g++ -fopenmp OMPUtil.cpp main.cpp -o out
+	./run.sh
 #	./out 1
 #	./out 4
 #	./out 1 s > tmp1
