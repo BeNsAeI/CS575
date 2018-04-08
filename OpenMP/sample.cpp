@@ -20,8 +20,8 @@ int main(int argc, char ** argv)
 	cout << "Number of available threads is " << omp_get_max_threads() << "." << endl;
 	omp_set_num_threads(omp_get_max_threads());
 	cout << "Number of used threads is " << omp_get_num_threads() << "." << endl << endl;
-	int stress = 10;
-	int second = 420000000;
+	long stress = 10;
+	long second = 420000000;
 	cout << "Performing stress test of size " << (double)((double)stress*(double)second) << " samples." << endl;
 	cout << "Single thread started" << endl;
 	myUtil.timerStart();
@@ -32,7 +32,13 @@ int main(int argc, char ** argv)
 		printf("%d -> %d\n",thread,i);
 	}
 	myUtil.timerStop();
-	cout << "Single thread ended in " << myUtil.Time() << " seconds." << endl;
+	myUtil.TS = myUtil.Time();
+	cout << "Single thread ended in ";
+	printf(ANSI_COLOR_YELLOW "%g" ANSI_COLOR_RESET,myUtil.TS);
+	cout << " seconds." << endl;
+	
+	printf("There were " ANSI_COLOR_CYAN "%g" ANSI_COLOR_RESET " Mega Ops per second.\n",myUtil.megaMult(stress*second, myUtil.TS));
+	
 	cout << "Multi thread (Out of Order) started" << endl;
 	myUtil.timerStart();
 	#pragma omp parallel for
@@ -43,7 +49,12 @@ int main(int argc, char ** argv)
 			printf("%d -> %d\n",thread,i);
 		}
 	myUtil.timerStop();
-	cout << "Multi thread ended in " << myUtil.Time() << " seconds." << endl;
+	myUtil.TM = myUtil.Time();
+	cout << "Multi thread ended in ";
+	printf(ANSI_COLOR_YELLOW "%g" ANSI_COLOR_RESET,myUtil.TM);
+	cout  << " seconds." << endl;
+	printf("There were " ANSI_COLOR_CYAN "%g" ANSI_COLOR_RESET " Mega Ops per second.\n",myUtil.megaMult(stress*second, myUtil.TM));
+	printf("SpeedUp is about " ANSI_COLOR_CYAN "%g" ANSI_COLOR_RESET ".\n", myUtil.speedUp());
 	cout << "Multi thread (In Order) started" << endl;
 	myUtil.timerStart();
 	#pragma omp parallel for
@@ -54,7 +65,9 @@ int main(int argc, char ** argv)
 			printf("%d -> %d\n",thread,i);
 		}
 	myUtil.timerStop();
-	cout << "Multi thread ended in " << myUtil.Time() << " seconds." << endl;
-
+	myUtil.TM = myUtil.Time();
+	printf("Multi thread ended in " ANSI_COLOR_YELLOW "%g" ANSI_COLOR_RESET " seconds.\n",myUtil.TM);
+	printf("There were " ANSI_COLOR_CYAN "%g" ANSI_COLOR_RESET " Mega Ops per second.\n",myUtil.megaMult(stress*second, myUtil.TM));
+	printf("SpeedUp is about " ANSI_COLOR_CYAN "%g" ANSI_COLOR_RESET ".\n", myUtil.speedUp());
 	return 0;
 }

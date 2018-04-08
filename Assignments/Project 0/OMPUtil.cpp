@@ -4,7 +4,6 @@
 #include <ctime>
 #include <sys/time.h>
 #include <iostream>
-#include "color.h"
 
 Utility::Utility()
 {
@@ -13,12 +12,11 @@ Utility::Utility()
 }
 bool Utility::isOpenMP()
 {
-	printf("Checking if OpenMP is Supported...\n");
 	#ifndef _OPENMP
-		fprintf(stderr, ANSI_COLOR_RED "OpenMP is not suppoerted!\n" ANSI_COLOR_RESET);
+		fprintf(stderr, "OpenMP is not suppoerted!\n");
 		exit(-1);
 	#endif
-	printf(ANSI_COLOR_GREEN "OpenMP is ready!\n" ANSI_COLOR_RESET);
+	std::cout << "OpenMP is ready!" << std::endl;
 	return true;
 }
 double Utility::megaMult(long op, float time)
