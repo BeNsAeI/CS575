@@ -9,6 +9,7 @@ public:
 	bool isOpenMP();
 	double megaMult(long op, float time);
 	float speedUp();
+	float pf(float speedup);
 	float TS;
 	float TM;
 	float speedUp(float ts, float tm);

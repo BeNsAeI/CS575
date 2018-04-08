@@ -69,5 +69,6 @@ int main(int argc, char ** argv)
 	printf("Multi thread ended in " ANSI_COLOR_YELLOW "%g" ANSI_COLOR_RESET " seconds.\n",myUtil.TM);
 	printf("There were " ANSI_COLOR_CYAN "%g" ANSI_COLOR_RESET " Mega Ops per second.\n",myUtil.megaMult(stress*second, myUtil.TM));
 	printf("SpeedUp is about " ANSI_COLOR_CYAN "%g" ANSI_COLOR_RESET ".\n", myUtil.speedUp());
+	printf("Parallel Fraction is about " ANSI_COLOR_YELLOW "%g" ANSI_COLOR_RESET ".\n",myUtil.pf(myUtil.speedUp()));
 	return 0;
 }

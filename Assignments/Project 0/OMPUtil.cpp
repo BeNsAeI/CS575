@@ -31,6 +31,10 @@ float Utility::speedUp(float ts, float tm)
 {
 	return  (float)(ts)/(float)(tm);
 }
+float Utility::pf(float speedup)
+{
+	return (4.0/3.0)*( 1.0 - (1.0/(float)speedup) );
+}
 void Utility::timerStart()
 {
 	gettimeofday(&startTime,NULL);

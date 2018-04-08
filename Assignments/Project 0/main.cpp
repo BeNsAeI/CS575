@@ -8,8 +8,8 @@
 
 #define NUMT	         4
 #define DEBUG 0
-#define ARRAYSIZE       100000	// you decide
-#define NUMTRIES        100000	// you decide
+#define ARRAYSIZE       50000	// you decide
+#define NUMTRIES        50000	// you decide
 
 float A[ARRAYSIZE];
 float B[ARRAYSIZE];
@@ -66,7 +66,7 @@ main(int argc, char**argv)
 	{
 		printf( "   Peak Performance = " ANSI_COLOR_YELLOW "%8.2lf" ANSI_COLOR_RESET " MegaMults/Sec\n", maxMegaMults );
 		printf( "Average Performance = " ANSI_COLOR_YELLOW "%8.2lf" ANSI_COLOR_RESET " MegaMults/Sec\n", avgMegaMults );
-		printf( " Total time is: " ANSI_COLOR_YELLOW "%g.\n" ANSI_COLOR_RESET, totalTime);
+		printf( "      Total time is = " ANSI_COLOR_YELLOW "%g.\n" ANSI_COLOR_RESET, totalTime);
 	}else{
 		printf("%g\n",totalTime);
 	}
