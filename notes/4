@@ -1,0 +1,72 @@
+- Fork join model
+ - We start with a single thread
+ - somewhere in code we break the thread into  4
+ - You have to do the tracking for the 4 threads
+
+- Thread pool
+ - 1024 default available threads
+
+- The index must be an int or pointers
+- Start and terminate conditions must have compatible types
+- neither the start nor the end conditions could be modified as loop runs
+- The index can only be changed by the change of expression
+- There can be ne inter loop data dependencies such as:
+- a[i] = a[i-1] + 1
+
+** Look at  slide 13
+
+- OpenMP direcctive data types:
+ - default (none)
+ - private(x)
+ - shared(x)
+- #pragma omp parallel for default(none),private(i,j), shared(x)
+
+SPMD:
+- total: number of threads: 
+- #pragma omp default(none),private(me),shared(total)
+{
+	me = omp_get_thread_num();
+	DoWork(me,Total);
+}
+- do memory segmentation in doWork to orgenize results
+- C[i] = A[i] * B[i]
+___
+
+- static and dynamic assignment
+ - Static might create idleing threads
+ - dynamic has master thread assign new works
+
+OpenMP assignment:
+ - schedule(static [, chunk size])
+ - schedule(dynamic[, chunk size])
+ - deafult is static
+ - chunk size is 1 by default
+
+chunk size 1: 
+ - 0: 0, 3,6,9
+ - 1: 1,4,7,10
+ - 2: 2,5,8,11
+
+chunk size of 2:
+ - 0: 0, 1, 6,7
+ - 1: 2, 3, 8,9
+ - 2: 4,5,10,11
+chunk size 4:
+ - 0: 0,1,2,3 
+ - 1: 4,5,6,7
+ - 2: 8,9,10,11
+___
+- Arithmetic operations among threads - A vproblem
+- There is no guarantee when each thread will execute this line correctly:
+ - assume sum is shared
+ - sum = sum + myPartialSum
+
+- There is no garantee that each trhead will execute this line completely as
+  scheduler switches to another thread
+___
+
+- 3 solutions:
+- #pragma omp atomic (next line is forced to execute sequentially)
+- #pragma omp critical (serializes the code)
+- #pragma omp for reduction (+:sum), private(myPratialSum)
+ - This ones creates a tree and performs the stated operations
