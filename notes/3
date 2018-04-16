@@ -1,0 +1,69 @@
+Announcements:
+- No more no class day todays for arrest of the term
+- Website will be updated
+- New website will be created
+- Duedates will shift
+- project 1 -> april 22
+
+More's law:
+- has nothing to do with speed of computation
+- it talks about transistor density
+- issues:
+ - More clock frequency requires more power
+ - higher power increases the energy wasted
+ - voltage leaks out
+ - electrons become unreliable
+
+- Solustion: more transistors in same density
+- instruction level parallelism
+
+- Instruction level parallelism implies certain micro-ops can happen on the same CPU
+  core simultaniously without poluting the BUS
+
+1: Instruction level parallelism (out of order execution)
+2: Data level paralleism (many data, same operation)
+3: 
+
+SISD -> Single instruction Single data (single core CPU)
+SIMD -> Single instruction Multiple data (GPUs)
+MISD -> Bad idea ...
+MIMD -> Multiple instructions Multiple data (many processors running independantly)
+___
+
+- Von Neumann Architecture:
+ - Basis of general purpose computers (haven't changed since 1960)
+
+- states are described using following:
+ - Clock
+ - Registers
+ - Program counters
+ - Stack pointer
+
+* Shared memory model: 
+ - Thread level parallelism
+ - Threads are basic unit of scheduling
+ - Many threads can belong to a single process
+ - They share the same memory space
+ - fork is an example of this
+
+* Inter process communication: processes get independant memory
+ - send messages to eachother
+ - exec, system etc are examples of this
+___
+
+* OpenMP does not check for conforming
+* 
+* 
+* 
+* 
+* OpenMP does not gaurantee identical behavior accross vendor processors
+* OpenMP does not gaurantee order
+* OpenMP is NOT overhead free
+* OpenMP does not prevent you from writing false-sharing code (makes it easy)
+(Check notes)
+___
+
+Default(none): by default no variable in the loop is not shared
+private(x): means that each thread will have its own copy of the variable x
+shared(x): means that each thread will share common x. this is potentially bad
+#pragma omp ... (look at the notes)
