@@ -1,12 +1,12 @@
 Running the code with 1 thread...
-[31mTotal Time was: [0m0.000038[31m seconds.
-[0mComputed volume is [36m8.058985[0m units.
+Total Time was: 0.000038 seconds.
+Computed volume is 8.058985 units.
 Running the code with 2 thread...
-[31mTotal Time was: [0m0.000374[31m seconds.
-[0mComputed volume is [36m8.058985[0m units.
+Total Time was: 0.000374 seconds.
+Computed volume is 8.058985 units.
 Running the code with 4 thread...
-[31mTotal Time was: [0m0.000419[31m seconds.
-[0mComputed volume is [36m8.058985[0m units.
+Total Time was: 0.000419 seconds.
+Computed volume is 8.058985 units.
 extracting times...
 Speedup is 1 vs 2 threads: .29323308270676691729
 Speedup is 1 vs 4 threads: .23353293413173652694
