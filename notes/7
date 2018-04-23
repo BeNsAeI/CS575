@@ -1,0 +1,30 @@
+OMP Critical directive:
+- Like atomic
+- One thread at the time runs the code (Similar to mutex(
+
+OMP Single:
+- Restricts execution to only one thread
+- it happens only once by one of the threads
+
+OMP Barrier:
+- Force each thread to wait here until all threads arrive
+
+OMP parallel Sections:
+- omp section (for each task)
+- there is an implied barrier for each section
+- a section is basically a thread
+- each thread tacles a section
+
+omp task:
+- Basically also a thread
+- Look at the notes
+
+omp taskwait
+- 
+
+Tasks:
+- also basically a thread
+- Processing each element of a linked list
+- Tree traversal Algorithms
+- off load it to a thread
+
