@@ -5,73 +5,86 @@
 #include <math.h>
 #include "color.h"
 #include "OMPUtil.h"
+#include "const.h"
 
-#define NUMT	         4
-#define DEBUG 0
-#define ARRAYSIZE       50000	// you decide
-#define NUMTRIES        50000	// you decide
-
-float A[ARRAYSIZE];
-float B[ARRAYSIZE];
-float C[ARRAYSIZE];
-
-int
-main(int argc, char**argv)
+float Height( int iu, int iv, int NUMNODES)
 {
-#ifndef _OPENMP
-	fprintf( stderr, "OpenMP is not supported here -- sorry.\n" );
-	return 1;
-#endif
+	float u = (float)iu / (float)(NUMNODES-1);
+	float v = (float)iv / (float)(NUMNODES-1);
+
+	float bu0 = (1.-u) * (1.-u) * (1.-u);
+	float bu1 = 3. * u * (1.-u) * (1.-u);
+	float bu2 = 3. * u * u * (1.-u);
+	float bu3 = u * u * u;
+
+	float bv0 = (1.-v) * (1.-v) * (1.-v);
+	float bv1 = 3. * v * (1.-v) * (1.-v);
+	float bv2 = 3. * v * v * (1.-v);
+	float bv3 = v * v * v;
+
+        float top = bu0 * ( bv0*TOPZ00 + bv1*TOPZ01 + bv2*TOPZ02 + bv3*TOPZ03 )
+		  + bu1 * ( bv0*TOPZ10 + bv1*TOPZ11 + bv2*TOPZ12 + bv3*TOPZ13 )
+		  + bu2 * ( bv0*TOPZ20 + bv1*TOPZ21 + bv2*TOPZ22 + bv3*TOPZ23 )
+		  + bu3 * ( bv0*TOPZ30 + bv1*TOPZ31 + bv2*TOPZ32 + bv3*TOPZ33 );
+
+        float bot = bu0 * ( bv0*BOTZ00 + bv1*BOTZ01 + bv2*BOTZ02 + bv3*BOTZ03 )
+		  + bu1 * ( bv0*BOTZ10 + bv1*BOTZ11 + bv2*BOTZ12 + bv3*BOTZ13 )
+		  + bu2 * ( bv0*BOTZ20 + bv1*BOTZ21 + bv2*BOTZ22 + bv3*BOTZ23 )
+		  + bu3 * ( bv0*BOTZ30 + bv1*BOTZ31 + bv2*BOTZ32 + bv3*BOTZ33 );
+
+        return top - bot;
+}
+
+int main( int argc, char ** argv )
+{
 	int numThreads = 1;
+	int NUMNODES = 1;
 	bool supress = false;
-	if(argc > 1)
+	if (argc > 1)
 		numThreads = atoi(argv[1]);
 	if(argc > 2)
+		NUMNODES = atoi(argv[2]);
+	if (argc > 3)
 		supress = true;
-	if (DEBUG)
-		std::cout << argv[1] << ", " << numThreads << std::endl;
+	if (DEBUG && !supress)
+		printf(ANSI_COLOR_YELLOW "Initializing the Utility tools\n" ANSI_COLOR_RESET);
 
-	if(!supress)
-		printf("Initiating the utility tools...\n");
 	Utility myUtil;
 	if(!supress)
-		myUtil.isOpenMP();
+		myUtil.isOpenMP(DEBUG && !supress);
 
 	omp_set_num_threads( numThreads );
 	if(!supress)
 		fprintf( stderr, "Using " ANSI_COLOR_CYAN "%d" ANSI_COLOR_RESET " threads\n", numThreads );
-	double maxMegaMults = 0.;
-	double sumMegaMults = 0.;
-	double totalTime;
-	for( int t = 0; t < NUMTRIES; t++ )
-	{
-		double time0 = omp_get_wtime( );
 
-		#pragma omp parallel for
-		for( int i = 0; i < ARRAYSIZE; i++ )
+	
+
+	float fullTileArea = (((XMAX - XMIN)/(float)(NUMNODES-1))*((YMAX - YMIN)/(float)(NUMNODES-1)))/4;
+
+	double volume = 0;
+	double pVolume = 0;
+	myUtil.timerStart();
+	#pragma omp parallel for collapse(2) reduction(+:volume),private(pVolume)
+	for( int iv = 0; iv < NUMNODES; iv++ )
+	{
+		for( int iu = 0; iu < NUMNODES; iu++ )
 		{
-			C[i] = A[i] * B[i];
+			pVolume = fullTileArea * Height(iu,iv,NUMNODES);
+			volume = volume + pVolume;
+			if(iv > 0 && iv + 1 < NUMNODES)
+				pVolume *=2;
+			if(iu > 0 && iu + 1 < NUMNODES)
+				pVolume *=2;
+			if(DEBUG && !supress)
+				printf("Thread: %d computed: %#f.\n",omp_get_thread_num(),pVolume);
 		}
-
-		double time1 = omp_get_wtime( );
-		double megaMults = (double)ARRAYSIZE/(time1-time0)/1000000.;
-		sumMegaMults += megaMults;
-		if( megaMults > maxMegaMults )
-			maxMegaMults = megaMults;
-		totalTime += (time1-time0);
 	}
-
-	double avgMegaMults = sumMegaMults/(double)NUMTRIES;
+	myUtil.timerStop();
 	if(!supress)
-	{
-		printf( "   Peak Performance = " ANSI_COLOR_YELLOW "%8.2lf" ANSI_COLOR_RESET " MegaMults/Sec\n", maxMegaMults );
-		printf( "Average Performance = " ANSI_COLOR_YELLOW "%8.2lf" ANSI_COLOR_RESET " MegaMults/Sec\n", avgMegaMults );
-		printf( "      Total time is = " ANSI_COLOR_YELLOW "%g.\n" ANSI_COLOR_RESET, totalTime);
-	}else{
-		printf("%g\n",totalTime);
-	}
-	// note: %lf stands for "long float", which is how printf prints a "double"
-	//        %d stands for "decimal integer", not "double"
-
-	return 0;
+		printf(ANSI_COLOR_RED "Total Time was: "ANSI_COLOR_RESET);
+	printf("%#f",myUtil.Time());
+	if(!supress)
+		printf(ANSI_COLOR_RED " seconds.\n" ANSI_COLOR_RESET);
+	if(!supress)
+		printf("Computed volume is " ANSI_COLOR_CYAN "%#f" ANSI_COLOR_RESET " units.\n" ,volume);
 }

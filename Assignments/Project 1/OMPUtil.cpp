@@ -10,13 +10,14 @@ Utility::Utility()
 	TS = 0;
 	TM = 0;
 }
-bool Utility::isOpenMP()
+bool Utility::isOpenMP(bool DEBUG)
 {
 	#ifndef _OPENMP
 		fprintf(stderr, "OpenMP is not suppoerted!\n");
 		exit(-1);
 	#endif
-	std::cout << "OpenMP is ready!" << std::endl;
+	if(DEBUG)
+		std::cout << "OpenMP is ready!" << std::endl;
 	return true;
 }
 double Utility::megaMult(long op, float time)

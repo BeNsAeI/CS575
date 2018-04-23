@@ -1,0 +1,37 @@
+Here is when to use multithreading:
+- When operation is blocking
+ - User I/O
+- CPU intensive operations
+- Asyncronous I/O response
+- Different priority operations
+- Where over lapping I/O increases performance
+- To mannage independant in interactive simulators
+- 
+* Look at the notes
+___
+
+- String tokenizer strtok is not thread safe
+- it keeps an internal global state
+- use strtok_r is thread safe (private state)
+ - uses (char ** sret) <- private pointer for state tracking
+___
+
+Deadlock Fault Problem:
+- Look at the note
+___
+
+Race condition Fault:
+- Who gets to modify the data first
+- Loack A{}
+- Mutual execution locker: Mutex 
+___
+
+Sending a message to optimizier with voletile ketyword
+- volatile int val = 0;
+ - means please do not optimize this out
+- int restrict * val = 0
+ - optimizer will not move it in the assembly
+___
+
+Synchronization
+- 

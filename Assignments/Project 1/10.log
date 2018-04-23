@@ -1,0 +1,17 @@
+Running the code with 1 thread...
+[31mTotal Time was: [0m0.000038[31m seconds.
+[0mComputed volume is [36m8.058985[0m units.
+Running the code with 2 thread...
+[31mTotal Time was: [0m0.000374[31m seconds.
+[0mComputed volume is [36m8.058985[0m units.
+Running the code with 4 thread...
+[31mTotal Time was: [0m0.000419[31m seconds.
+[0mComputed volume is [36m8.058985[0m units.
+extracting times...
+Speedup is 1 vs 2 threads: .29323308270676691729
+Speedup is 1 vs 4 threads: .23353293413173652694
+Speedup is 2 vs 4 threads: .29323308270676691729
+parallel fraction 1 vs 2 returned -3.21367521367521367524.
+parallel fraction 1 vs 4 returned -4.37606837606837606850.
+parallel fraction 2 vs 4 returned -.34085213032581453633.
+cleaning up ...

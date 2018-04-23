@@ -6,7 +6,7 @@
 class Utility{
 public:
 	Utility();
-	bool isOpenMP();
+	bool isOpenMP(bool DEBUG);
 	double megaMult(long op, float time);
 	float speedUp();
 	float pf(float speedup);

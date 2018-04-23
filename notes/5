@@ -1,0 +1,25 @@
+Trapezoid approximation
+- Don't use simple addition, you get a racing condition
+- use reducggtion(+:sum) instead
+___
+
+SpeedUp: ratio of time spent on a single thread vs multiple threads
+         - how much faster are we processing each thread
+Amdahl's law:
+ - T1 / Tn = 1 / (F_{par}/n + F_{seq})
+ - F_{par} could be parallelized
+ - F_{seq} could not be parallelized
+ - f_{seq} = 1 - F_{par}
+ - As the time for parallel portion goes to 0, but the sequential part does not change
+ - At some point adding threads comes at deminition returns
+
+Gustafson's observation:
+ - We can attack problems with significantly larger datasets
+ - S = (1- F_{par}) / F_{par}
+ - multiply F_{par} by N
+ - the larger the N, the higher the speed up
+ - It pays off to have very large datasets
+
+- We can take the speed up that we want and use it to get the parallel fraction:
+ - 100 = T1/Tn = 1 / (F_{par}/n + F_{seq})
+ - F_{par} = (n/(n-1))*(1-(1/speedup))
