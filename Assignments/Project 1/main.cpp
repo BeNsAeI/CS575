@@ -57,8 +57,6 @@ int main( int argc, char ** argv )
 	if(!supress)
 		fprintf( stderr, "Using " ANSI_COLOR_CYAN "%d" ANSI_COLOR_RESET " threads\n", numThreads );
 
-	
-
 	float fullTileArea = (((XMAX - XMIN)/(float)(NUMNODES-1))*((YMAX - YMIN)/(float)(NUMNODES-1)))/4;
 
 	double volume = 0;
@@ -70,11 +68,11 @@ int main( int argc, char ** argv )
 		for( int iu = 0; iu < NUMNODES; iu++ )
 		{
 			pVolume = fullTileArea * Height(iu,iv,NUMNODES);
-			volume = volume + pVolume;
 			if(iv > 0 && iv + 1 < NUMNODES)
 				pVolume *=2;
 			if(iu > 0 && iu + 1 < NUMNODES)
 				pVolume *=2;
+			volume = volume + pVolume;
 			if(DEBUG && !supress)
 				printf("Thread: %d computed: %#f.\n",omp_get_thread_num(),pVolume);
 		}

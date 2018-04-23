@@ -1,6 +1,6 @@
 #!/bin/bash
 #echo "Compiling..."
-for i in `seq 0 4`; do
+for i in `seq 0 5`; do
 	echo number of Nodes: $[10**$i]
 
 	echo "Running the code with 1 thread..." >$[10**$i].log

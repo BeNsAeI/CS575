@@ -1,0 +1,17 @@
+Running the code with 1 thread...
+Total Time was: 132.653834 seconds.
+Computed volume is 1.230640 units.
+Running the code with 2 thread...
+Total Time was: 102.653553 seconds.
+Computed volume is 1.230640 units.
+Running the code with 4 thread...
+Total Time was: 72.633085 seconds.
+Computed volume is 1.230640 units.
+extracting times...
+Speedup is 1 vs 2 threads: 1.51336970434454226480
+Speedup is 1 vs 4 threads: 2.11488809586141328078
+Speedup is 2 vs 4 threads: 1.51336970434454226480
+parallel fraction 1 vs 2 returned .45229723917495631187.
+parallel fraction 1 vs 4 returned .70288232462866025627.
+parallel fraction 2 vs 4 returned .37922787668622379689.
+cleaning up ...
