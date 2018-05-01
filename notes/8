@@ -1,0 +1,51 @@
+Pragma OMP Task if(condition)
+- this if feature of omp
+- if condition is true:
+ - spawn off a thread to do this code
+- otherwise:
+ - Do it yourself, no more threads
+
+Pragma OMP Task if(Cond) tied/untide
+- This task is assigned(tied) to only one thread
+- tied -> forces no other thread helping other trhfeads when they are done
+- untied -> allows a task to be run on other threads
+
+
+Refrence OMP Documentation
+___
+
+Project #2:
+N-Body symulation
+- N number of particles
+- Each point exerts a gravitational force
+- predict the behavior of all points
+- Complexity of the problem is N^2
+- the program is given and is sequential
+- prallelize it
+- reduction sums are needed
+- parallelize either the i loop or the j loop
+- compare course grain and fine grain
+- compare types of scheduling
+ - Static allocation of work (it is tied)
+ - dynamic allocation of work (it is not tied)
+___
+
+Cache Architecture
+- memory is much slower than CPUs
+- Caching came about to solve this issue
+- it makes the memory higher arctival
+
+Memory pyramids:
+- Registers
+- Cache (L1, L2, L3)
+- RAM
+- Storage
+- Optical drives
+
+Cache:
+- Cache is a fixed amount of emmory L1 -> 64 kilobytes long (depending on the architecture)
+- Cache hits and misses
+- in cache going through rows and columns cases huge tyme complexity changes
+- structs are continuous pieces of memories
+- struct example:
+ - X,Y,Z vs X[],Y[] and Z[]

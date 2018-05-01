@@ -1,0 +1,32 @@
+Pre-fetching could be done in software
+
+Associative mapping cache:
+- any memory could be placed anywhere
+
+Direct mapping cache:
+- The actual memory location maps to a specific location to  cache
+
+N-Way set associative:
+- a cache line from a particular block of memory can appear ina a limited number 
+  of places in cache. each limited place is a set
+- a set contains n sets
+- any data could be placed anywhere
+- memory blcok appears anywhere in cache line of its set
+
+Mapping looks like this:
+- memory address division 64 -> which line block of memory -> modulos 4 -> cache set #
+- memory address modulos 64  -> offset in cache line
+- => both of these tell us where to find certain memory address in the cache
+___
+
+Cache can interact with cores in unexpected ways
+- each core makes a copy of the cache
+- in multi  core processing the cache will no longer mtach on returning from fork
+
+- MESI L2 to the rescue:
+- Modified
+- Exlusive
+- Shared
+- Invalid
+___
+

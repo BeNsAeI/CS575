@@ -1,0 +1,21 @@
+MESI is there to let OS know that there are several copies
+- Content of cache line does no longer match memory
+
+Combat false sharing #1:
+ - Put padding
+ - We are trying to put them on different cache lines
+
+Combat false sharing #2:
+ - each trhead gets its own stack
+ - store values in local temporary variables in each thread
+ - float tmp = array[i].value
+
+Mallocing in a cache line:
+ - struct hack *p = (struct hack *) malloc (ARRAYSIZE) * sizeof(struct hack));
+ - struct hack *Array = &p[0];
+ - ...
+ - Array[i].x = 10;
+- VS
+ - unsigned char * p = (unsigned char *) malloc (64+(ARRAYSIZE)* sizeof(struct hack));
+ - int offset = (long int) p & 0x3f;
+ - struct hack * Array = (struct hack *) &p[64-offset];
