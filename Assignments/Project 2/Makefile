@@ -1,13 +1,12 @@
 all:
 	clear
-	g++ -fopenmp OMPUtil.cpp main.cpp -o out -g
-	./out 4 200 300
-	./out 4 200 300 s
-#	./run.sh
-#	./out 1
-#	./out 4
-#	./out 1 s > tmp1
-#	./out 4 s > tmp2
+#	g++ -DPTYPE=static -DCG -fopenmp OMPUtil.cpp main.cpp -o out -g
+#	./out 4 200 300
+#	./out 4 200 300 s
+#	g++ -DPTYPE=dynamic -DFG -fopenmp OMPUtil.cpp main.cpp -o out -g
+#	./out 4 200 300
+#	./out 4 200 300 s
+	./run.sh
 bench:
 	./out &
 	nice -5 ./out &
@@ -20,3 +19,4 @@ kill:
 	make bench
 clean:
 	rm -rf out
+	rm *.log

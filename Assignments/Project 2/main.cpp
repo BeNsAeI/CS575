@@ -8,7 +8,6 @@
 #include "color.h"
 
 #define DEBUG 1
-#define PTYPE static
 #define Q(x) #x
 #define QUOTE(x) Q(x)
 
@@ -57,19 +56,27 @@ int main( int argc, char *argv[])
 	omp_set_num_threads(NUMTHREADS);
 	if(!supress)
 	{
+		printf(ANSI_COLOR_BLUE"\n=============== " ANSI_COLOR_YELLOW "INFORMATION" ANSI_COLOR_BLUE " ===============\n" ANSI_COLOR_RESET);
 		myUtil.isOpenMP(DEBUG && !supress);
 		printf( "Using " ANSI_COLOR_CYAN "%d" ANSI_COLOR_RESET
 			" threads, " ANSI_COLOR_CYAN "%d" ANSI_COLOR_RESET
 			" Bodies and " ANSI_COLOR_CYAN "%d" ANSI_COLOR_RESET
 			" Steps. \n", NUMTHREADS,NUMBODIES,NUMSTEPS);
 		printf("The scheduling type is " ANSI_COLOR_YELLOW "%s" ANSI_COLOR_RESET ".\n", QUOTE(PTYPE));
+		#ifdef CG
+			printf("Parallelism is " ANSI_COLOR_YELLOW "course " ANSI_COLOR_RESET "grain.\n");
+		#endif
+		#ifdef FG
+			printf("Parallelism is " ANSI_COLOR_YELLOW "fine " ANSI_COLOR_RESET "grain.\n");
+		#endif
+		printf(ANSI_COLOR_BLUE "===========================================\n\n" ANSI_COLOR_RESET);
 	}
 	omp_set_num_threads(NUMTHREADS);
 	int numProcessors = omp_get_num_procs( );
 
 	Body Bodies[NUMBODIES];
 
-	#pragma omp parallel for schedule(PTYPE, 4)
+	#pragma omp parallel for schedule(PTYPE, 1)
 	for( int i = 0; i < NUMBODIES; i++ )
 	{
 		Bodies[i].mass = EARTH_MASS  * Ranf( 0.5f, 10.f );
@@ -80,15 +87,22 @@ int main( int argc, char *argv[])
 		Bodies[i].vy = Ranf( -100.f, 100.f );;
 		Bodies[i].vz = Ranf( -100.f, 100.f );;
 	};
+	myUtil.timerStart();
 	double time0 = omp_get_wtime( );
 	for( int t = 0; t < NUMSTEPS; t++ )
 	{
+		#ifdef CG
+		#pragma omp parallel for schedule(PTYPE, 1)
+		#endif
 		for( int i = 0; i < NUMBODIES; i++ )
 		{
 			float fx = 0.;
 			float fy = 0.;
 			float fz = 0.;
 			Body *bi = &Bodies[i];
+			#ifdef FG
+			#pragma omp parallel for schedule(PTYPE, 1),reduction(+:fx),reduction(+:fy),reduction(+:fz)
+			#endif
 			for( int j = 0; j < NUMBODIES; j++ )
 			{
 				if( j == i )
@@ -125,9 +139,15 @@ int main( int argc, char *argv[])
 			Bodies[i].vy = Bodies[i].vynew;
 			Bodies[i].vz = Bodies[i].vznew;
 		}
-	}  // t
-	double time1 = omp_get_wtime( );
+	}  //
+	myUtil.timerStop();
+	//double time1 = omp_get_wtime( );
 	// print performance here:::
+	if(!supress)
+		printf("The process took ");
+	printf("%#f",myUtil.Time());
+	if(!supress)
+		printf(" seconds.\n");
 	if(!supress)
 		printf(ANSI_COLOR_YELLOW "Done!\n" ANSI_COLOR_RESET);
 	return 0;
