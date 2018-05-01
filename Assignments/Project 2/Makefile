@@ -7,6 +7,7 @@ all:
 #	./out 4 200 300
 #	./out 4 200 300 s
 	./run.sh
+	cat generalLog.log
 bench:
 	./out &
 	nice -5 ./out &

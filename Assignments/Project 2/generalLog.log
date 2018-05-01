@@ -1,0 +1,46 @@
+Static, Course grain:
+extracting times...
+Time for 4 experiments are: 0.555562, 0.317092, 0.317116 and 0.421749.
+Performance for 4 experiments are: 28.79966592387528304671, 50.45854200042889760700, 50.45472319277488363879 and 37.93725651987319472008 Megabodies/second.
+Speedup is 1 vs 2 threads: 1.75205303192764245077
+Speedup is 1 vs 4 threads: 1.75192043290152499400
+Speedup is 1 vs 8 threads: 1.31728113166836198781
+parallel fraction 1 vs 2 returned .57232136107221156234.
+parallel fraction 1 vs 4 returned .57226376174036381178.
+parallel fraction 1 vs 8 returned .32114747468929360419.
+==================================================================================
+Static, Fine grain:
+extracting times...
+Time for 4 experiments are: 0.608047, 0.517821, 0.526141 and 4.808719.
+Performance for 4 experiments are: 26.31375535114884211253, 30.89870824087860476882, 30.41009919394230824056 and 3.32728945068322769535 Megabodies/second.
+Speedup is 1 vs 2 threads: 1.17424167810884456211
+Speedup is 1 vs 4 threads: 1.15567309903618991867
+Speedup is 1 vs 8 threads: .12644677303872403440
+parallel fraction 1 vs 2 returned .19784874085939628570.
+parallel fraction 1 vs 4 returned .17960453714926642183.
+parallel fraction 1 vs 8 returned -9.21128794320175907493.
+==================================================================================
+Dynamic, Course grain:
+extracting times...
+Time for 4 experiments are: 0.798464, 0.402502, 0.372101 and 0.370333.
+Performance for 4 experiments are: 20.03847386983007374158, 39.75135527276883096233, 42.99907820726093184377 and 43.20435931985537340717 Megabodies/second.
+Speedup is 1 vs 2 threads: 1.98375163353225574034
+Speedup is 1 vs 4 threads: 2.14582599885514954273
+Speedup is 1 vs 8 threads: 2.15607034749806255451
+parallel fraction 1 vs 2 returned .66120618253713797157.
+parallel fraction 1 vs 4 returned .71197198621352997755.
+parallel fraction 1 vs 8 returned .71492432136368494175.
+==================================================================================
+Dynamic, Fine grain:
+extracting times...
+Time for 4 experiments are: 1.395670, 0.960064, 0.804524 and 3.916698.
+Performance for 4 experiments are: 11.46402802954853224616, 16.66555562962469168722, 19.88753598401042106885 and 4.08507370238910429142 Megabodies/second.
+Speedup is 1 vs 2 threads: 1.45372600159989334044
+Speedup is 1 vs 4 threads: 1.73477733417523902332
+Speedup is 1 vs 8 threads: .35633842588833757415
+parallel fraction 1 vs 2 returned .41614994948662649479.
+parallel fraction 1 vs 4 returned .56474285946295805359.
+parallel fraction 1 vs 8 returned -2.40842797127305642928.
+==================================================================================
+cleaning up ...
+Done
