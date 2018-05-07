@@ -1,0 +1,42 @@
+Test 1 review:
+Atomic: we cannot divide (we are not allowing it to happen on several threads)
+Deterministic: On same inputs we get same outputs
+Scheduling: Static vs Dynamic
+threads safety: string tokenizer (no hidden state)
+
+Speedup: T1/Tn
+Speed efficiency Sn/n
+Amdahl's law compute S given Fp and N
+Scalability with number of cores
+Parallel fraction
+Inverse Amdahl's law: Fp given s and N
+Parallel fracton to max speedup
+Gustafson's observation
+
+Memorize amdahl's law and inverse amdahl's law
+
+look at OMP parallel clauses
+shared between cores: heap, executable, globals
+not shared in cores : stack, stack pointer, program counter, registers
+For loop cannonical form
+Reduction, Atomic, Critical, what are they which is fastest
+Problems: thread safety, Race Conditions, Deadlock
+Syncing: Mutexes: Mutual exclusion lock
+Sections, tasks: sections static, Tasks are dynamic
+ - Section created at compile time
+ - task created on run time
+
+Cache L1,L2,L3
+Cache line 64 byte
+array of structures
+structure of arrays
+
+MESI: Modified, Exclusive Shared, Invalid
+
+False sharing
+
+18 multiple choice
+1 short answer
+2 behavior prediction
+
+Bring the OMP quick refrence card
