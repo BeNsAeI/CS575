@@ -1,0 +1,17 @@
+Pipeline:
+- 1 -> 2 -> 3 -> ...
+- Linear
+- each thread passes the work to next all other threads wait
+
+Map-reduce:      _                _
+                /  worker threads  \
+- Map thread -> |- worker threads -|-> accumulate thread
+                \_ worker threads _/
+- Map task maps tasks to threads
+
+bubble sort:
+
+SIMD:
+- Vector processing
+
+- (x v y v -z)^(x v y v z)

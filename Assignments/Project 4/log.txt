@@ -1,0 +1,201 @@
+Initializing the Utility tools
+
+=============== INFORMATION ===============
+OpenMP is ready!
+Using 4 threads.
+===========================================
+
+Story time!
+
+   So God said to Noah, I am going to put an end to all people, for the
+earth is filled with some wicked s**t because of them! I am surely
+going to destroy both them and the earth because ... it's more dramatic that way! 
+
+   Go build an arc and take a pair of each animal (don't forget the Dodo
+They look liek birds, but they can't fly ... I guess chickens too).
+
+  - "But god Jesus was good at carpenting, not me " said Noah to God
+  - Not with the whole "ow your son this and that" again replied God
+    Just build a canoe or a small fishing boat would do, I'll shrink everything!
+
+So Noah built the boat, but God got busy with planning his next religion
+and forgot to shrink the animals.
+Noah decided to teach God a lesson, and only brought some grain,
+6 Deers and 2 Wolves to his boat.
+
+Here is what happened next according to Noah's Diary:
+
+- Day 0: Dear Diary; Grain grew by 45 amount.(145)
+- Day 0: Dear Diary; 0 of the Deers got eaten or starved top death.(P: 6, GR:0 , DR:0, Grain: 97 )
+- Day 7: Dear Diary; -1 of the Deers got eaten or starved top death.(P: 6, GR:5 , DR:-5, Grain: 356 )
+- Day 7: Dear Diary; Deer population grew by 1 amount.(P: 6, GR:5 , DR:-5, Grain: 353 )
+- Day 10: Dear Diary; Grain grew by 24 amount.(447)
+- Day 14: Dear Diary; -1 of the Deers got eaten or starved top death.(P: 7, GR:11 , DR:-11, Grain: 523 )
+- Day 14: Dear Diary; Deer population grew by 1 amount.(P: 7, GR:11 , DR:-11, Grain: 570 )
+- Day 14: Dear Diary; Wolf population grew by 1 amount.(P: 3, GR:4 , DR:-12, Deer: 7 )
+- Day 20: Dear Diary; Grain grew by 26 amount.(762)
+- Day 21: Dear Diary; -2 of the Deers got eaten or starved top death.(P: 9, GR:22 , DR:-22, Grain: 741 )
+- Day 21: Dear Diary; Deer population grew by 2 amount.(P: 9, GR:22 , DR:-22, Grain: 787 )
+- Day 28: Dear Diary; Wolf population grew by 1 amount.(P: 4, GR:6 , DR:-20, Deer: 8 )
+- Day 28: Dear Diary; -3 of the Deers got eaten or starved top death.(P: 12, GR:27 , DR:-27, Grain: 981 )
+- Day 28: Dear Diary; Deer population grew by 3 amount.(P: 12, GR:27 , DR:-27, Grain: 981 )
+- Day 30: Dear Diary; Grain grew by 15 amount.(1014)
+- Day 35: Dear Diary; -4 of the Deers got eaten or starved top death.(P: 16, GR:24 , DR:-24, Grain: 1042 )
+- Day 35: Dear Diary; Deer population grew by 4 amount.(P: 16, GR:24 , DR:-24, Grain: 1085 )
+- Day 40: Dear Diary; Grain grew by 6 amount.(1142)
+- Day 42: Dear Diary; -6 of the Deers got eaten or starved top death.(P: 22, GR:18 , DR:-18, Grain: 1102 )
+- Day 42: Dear Diary; Deer population grew by 6 amount.(P: 22, GR:18 , DR:-18, Grain: 1153 )
+- Day 42: Dear Diary; Wolf population grew by 2 amount.(P: 6, GR:13 , DR:-40, Deer: 22 )
+- Day 49: Dear Diary; -4 of the Deers got eaten or starved top death.(P: 26, GR:6 , DR:-6, Grain: 1094 )
+- Day 49: Dear Diary; Deer population grew by 4 amount.(P: 26, GR:6 , DR:-6, Grain: 1091 )
+- Day 50: Dear Diary; Some of the grain was eaten by Noah and Deer(1070).
+- Day 56: Dear Diary; Wolf population grew by 3 amount.(P: 9, GR:22 , DR:-68, Deer: 25 )
+- Day 56: Dear Diary; 12 of the Deers got eaten or starved top death.(P: 14, GR:-11 , DR:11, Grain: 899 )
+- Day 56: Dear Diary; 12 of the Deers got eaten or starved top death.(P: 14, GR:-11 , DR:11, Grain: 899 )
+- Day 60: Dear Diary; Grain grew by 7 amount.(962)
+- Day 63: Dear Diary; -5 of the Deers got eaten or starved top death.(P: 19, GR:15 , DR:-15, Grain: 934 )
+- Day 63: Dear Diary; Deer population grew by 5 amount.(P: 19, GR:15 , DR:-15, Grain: 979 )
+- Day 70: Dear Diary; Some of the grain was eaten by Noah and Deer(940).
+- Day 70: Dear Diary; -4 of the Deers got eaten or starved top death.(P: 23, GR:5 , DR:-5, Grain: 937 )
+- Day 70: Dear Diary; Deer population grew by 4 amount.(P: 23, GR:5 , DR:-5, Grain: 937 )
+- Day 70: Dear Diary; Wolf population grew by 4 amount.(P: 13, GR:14 , DR:-44, Deer: 18 )
+- Day 77: Dear Diary; 10 of the Deers got eaten or starved top death.(P: 13, GR:-9 , DR:9, Grain: 837 )
+- Day 77: Dear Diary; 10 of the Deers got eaten or starved top death.(P: 13, GR:-9 , DR:9, Grain: 834 )
+- Day 80: Dear Diary; Grain grew by 17 amount.(879)
+- Day 84: Dear Diary; -5 of the Deers got eaten or starved top death.(P: 18, GR:14 , DR:-14, Grain: 891 )
+- Day 84: Dear Diary; Deer population grew by 5 amount.(P: 18, GR:14 , DR:-14, Grain: 936 )
+- Day 84: Dear Diary; Wolf population grew by 6 amount.(P: 19, GR:7 , DR:-22, Deer: 18 )
+- Day 90: Dear Diary; Grain grew by 55 amount.(923)
+- Day 91: Dear Diary; -4 of the Deers got eaten or starved top death.(P: 22, GR:6 , DR:-6, Grain: 869 )
+- Day 91: Dear Diary; Deer population grew by 4 amount.(P: 22, GR:6 , DR:-6, Grain: 914 )
+- Day 98: Dear Diary; Wolf population grew by 9 amount.(P: 28, GR:14 , DR:-43, Deer: 21 )
+- Day 98: Dear Diary; 8 of the Deers got eaten or starved top death.(P: 14, GR:-7 , DR:7, Grain: 826 )
+- Day 98: Dear Diary; 8 of the Deers got eaten or starved top death.(P: 14, GR:-7 , DR:7, Grain: 826 )
+- Day 100: Dear Diary; Grain grew by 8 amount.(839)
+- Day 105: Dear Diary; -5 of the Deers got eaten or starved top death.(P: 19, GR:11 , DR:-11, Grain: 847 )
+- Day 105: Dear Diary; Deer population grew by 5 amount.(P: 19, GR:11 , DR:-11, Grain: 894 )
+- Day 110: Dear Diary; Some of the grain was eaten by Noah and Deer(869).
+- Day 112: Dear Diary; Wolf population grew by 8 amount.(P: 36, GR:8 , DR:-25, Deer: 18 )
+- Day 112: Dear Diary; 0 of the Deers got eaten or starved top death.(P: 19, GR:1 , DR:-1, Grain: 848 )
+- Day 119: Dear Diary; 1 of the Deers got eaten or starved top death.(P: 18, GR:0 , DR:0, Grain: 837 )
+- Day 119: Dear Diary; 1 of the Deers got eaten or starved top death.(P: 18, GR:0 , DR:0, Grain: 837 )
+- Day 120: Dear Diary; Some of the grain was eaten by Noah and Deer(830).
+- Day 126: Dear Diary; Wolf population grew by 4 amount.(P: 40, GR:4 , DR:-14, Deer: 17 )
+- Day 126: Dear Diary; 0 of the Deers got eaten or starved top death.(P: 18, GR:1 , DR:-1, Grain: 830 )
+- Day 130: Dear Diary; Some of the grain was eaten by Noah and Deer(846).
+- Day 133: Dear Diary; -3 of the Deers got eaten or starved top death.(P: 20, GR:4 , DR:-4, Grain: 826 )
+- Day 133: Dear Diary; Deer population grew by 3 amount.(P: 20, GR:4 , DR:-4, Grain: 826 )
+- Day 140: Dear Diary; Some of the grain was eaten by Noah and Deer(778).
+- Day 140: Dear Diary; 6 of the Deers got eaten or starved top death.(P: 14, GR:-5 , DR:5, Grain: 775 )
+- Day 140: Dear Diary; 6 of the Deers got eaten or starved top death.(P: 14, GR:-5 , DR:5, Grain: 775 )
+- Day 140: Dear Diary; Wolf population grew by 5 amount.(P: 45, GR:5 , DR:-16, Deer: 19 )
+- Day 147: Dear Diary; -5 of the Deers got eaten or starved top death.(P: 19, GR:10 , DR:-10, Grain: 833 )
+- Day 147: Dear Diary; Deer population grew by 5 amount.(P: 19, GR:10 , DR:-10, Grain: 830 )
+- Day 150: Dear Diary; Some of the grain was eaten by Noah and Deer(815).
+- Day 154: Dear Diary; Wolf population grew by 2 amount.(P: 47, GR:2 , DR:-8, Deer: 18 )
+- Day 154: Dear Diary; 3 of the Deers got eaten or starved top death.(P: 16, GR:-2 , DR:2, Grain: 793 )
+- Day 154: Dear Diary; 3 of the Deers got eaten or starved top death.(P: 16, GR:-2 , DR:2, Grain: 793 )
+- Day 160: Dear Diary; Grain grew by 4 amount.(816)
+- Day 161: Dear Diary; -4 of the Deers got eaten or starved top death.(P: 20, GR:5 , DR:-5, Grain: 768 )
+- Day 161: Dear Diary; Deer population grew by 4 amount.(P: 20, GR:5 , DR:-5, Grain: 812 )
+- Day 168: Dear Diary; Wolf population grew by 3 amount.(P: 50, GR:3 , DR:-9, Deer: 19 )
+- Day 168: Dear Diary; 6 of the Deers got eaten or starved top death.(P: 14, GR:-5 , DR:5, Grain: 768 )
+- Day 168: Dear Diary; 7 of the Deers got eaten or starved top death.(P: 13, GR:-5 , DR:5, Grain: 768 )
+- Day 170: Dear Diary; Grain grew by 13 amount.(790)
+- Day 175: Dear Diary; -5 of the Deers got eaten or starved top death.(P: 18, GR:9 , DR:-9, Grain: 812 )
+- Day 175: Dear Diary; Deer population grew by 5 amount.(P: 18, GR:9 , DR:-9, Grain: 874 )
+- Day 180: Dear Diary; Some of the grain was eaten by Noah and Deer(884).
+- Day 182: Dear Diary; -3 of the Deers got eaten or starved top death.(P: 21, GR:4 , DR:-4, Grain: 891 )
+- Day 182: Dear Diary; Deer population grew by 3 amount.(P: 21, GR:4 , DR:-4, Grain: 891 )
+- Day 189: Dear Diary; 7 of the Deers got eaten or starved top death.(P: 14, GR:-6 , DR:6, Grain: 798 )
+- Day 189: Dear Diary; 7 of the Deers got eaten or starved top death.(P: 14, GR:-6 , DR:6, Grain: 798 )
+- Day 190: Dear Diary; Grain grew by 15 amount.(816)
+- Day 196: Dear Diary; -5 of the Deers got eaten or starved top death.(P: 19, GR:10 , DR:-10, Grain: 839 )
+- Day 196: Dear Diary; Deer population grew by 5 amount.(P: 19, GR:10 , DR:-10, Grain: 882 )
+- Day 196: Dear Diary; 12 of the Wolves got eaten or starved top death.(P: 38, GR:-4 , DR:12, Deer: 19 )
+- Day 200: Dear Diary; Some of the grain was eaten by Noah and Deer(821).
+- Day 203: Dear Diary; 2 of the Deers got eaten or starved top death.(P: 17, GR:-1 , DR:1, Grain: 828 )
+- Day 203: Dear Diary; 2 of the Deers got eaten or starved top death.(P: 17, GR:-1 , DR:1, Grain: 874 )
+- Day 210: Dear Diary; Some of the grain was eaten by Noah and Deer(885).
+- Day 210: Dear Diary; -5 of the Deers got eaten or starved top death.(P: 22, GR:6 , DR:-6, Grain: 882 )
+- Day 210: Dear Diary; Deer population grew by 5 amount.(P: 22, GR:6 , DR:-6, Grain: 882 )
+- Day 210: Dear Diary; Wolf population grew by 3 amount.(P: 41, GR:3 , DR:-9, Deer: 16 )
+- Day 217: Dear Diary; 12 of the Deers got eaten or starved top death.(P: 10, GR:-10 , DR:10, Grain: 805 )
+- Day 217: Dear Diary; 12 of the Deers got eaten or starved top death.(P: 10, GR:-10 , DR:10, Grain: 802 )
+- Day 220: Dear Diary; Grain grew by 21 amount.(862)
+- Day 224: Dear Diary; 15 of the Wolves got eaten or starved top death.(P: 26, GR:-5 , DR:15, Deer: 9 )
+- Day 224: Dear Diary; -3 of the Deers got eaten or starved top death.(P: 13, GR:24 , DR:-24, Grain: 980 )
+- Day 224: Dear Diary; Deer population grew by 3 amount.(P: 13, GR:24 , DR:-24, Grain: 980 )
+- Day 230: Dear Diary; Grain grew by 11 amount.(1041)
+- Day 231: Dear Diary; -5 of the Deers got eaten or starved top death.(P: 18, GR:22 , DR:-22, Grain: 1050 )
+- Day 231: Dear Diary; Deer population grew by 5 amount.(P: 18, GR:22 , DR:-22, Grain: 1050 )
+- Day 238: Dear Diary; Wolf population grew by 8 amount.(P: 34, GR:8 , DR:-24, Deer: 17 )
+- Day 238: Dear Diary; -7 of the Deers got eaten or starved top death.(P: 25, GR:12 , DR:-12, Grain: 1060 )
+- Day 238: Dear Diary; Deer population grew by 7 amount.(P: 25, GR:12 , DR:-12, Grain: 1060 )
+- Day 240: Dear Diary; Some of the grain was eaten by Noah and Deer(1027).
+- Day 245: Dear Diary; 9 of the Deers got eaten or starved top death.(P: 16, GR:-8 , DR:8, Grain: 921 )
+- Day 245: Dear Diary; 9 of the Deers got eaten or starved top death.(P: 16, GR:-8 , DR:8, Grain: 921 )
+- Day 250: Dear Diary; Some of the grain was eaten by Noah and Deer(958).
+- Day 252: Dear Diary; Wolf population grew by 3 amount.(P: 37, GR:3 , DR:-10, Deer: 15 )
+- Day 252: Dear Diary; -6 of the Deers got eaten or starved top death.(P: 22, GR:12 , DR:-12, Grain: 955 )
+- Day 252: Dear Diary; Deer population grew by 5 amount.(P: 21, GR:12 , DR:-12, Grain: 955 )
+- Day 259: Dear Diary; 5 of the Deers got eaten or starved top death.(P: 16, GR:-4 , DR:4, Grain: 836 )
+- Day 259: Dear Diary; 5 of the Deers got eaten or starved top death.(P: 16, GR:-4 , DR:4, Grain: 836 )
+- Day 260: Dear Diary; Some of the grain was eaten by Noah and Deer(836).
+- Day 266: Dear Diary; Wolf population grew by 2 amount.(P: 39, GR:2 , DR:-7, Deer: 15 )
+- Day 266: Dear Diary; -6 of the Deers got eaten or starved top death.(P: 22, GR:7 , DR:-7, Grain: 863 )
+- Day 266: Dear Diary; Deer population grew by 6 amount.(P: 22, GR:7 , DR:-7, Grain: 863 )
+- Day 270: Dear Diary; Grain grew by 61 amount.(809)
+- Day 273: Dear Diary; 12 of the Deers got eaten or starved top death.(P: 10, GR:-12 , DR:11, Grain: 758 )
+- Day 273: Dear Diary; 12 of the Deers got eaten or starved top death.(P: 10, GR:-12 , DR:11, Grain: 755 )
+- Day 280: Dear Diary; Grain grew by 33 amount.(918)
+- Day 280: Dear Diary; 13 of the Wolves got eaten or starved top death.(P: 26, GR:-5 , DR:13, Deer: 9 )
+- Day 280: Dear Diary; -3 of the Deers got eaten or starved top death.(P: 13, GR:21 , DR:-21, Grain: 915 )
+- Day 280: Dear Diary; Deer population grew by 3 amount.(P: 13, GR:21 , DR:-21, Grain: 915 )
+- Day 287: Dear Diary; -5 of the Deers got eaten or starved top death.(P: 18, GR:21 , DR:-21, Grain: 1018 )
+- Day 287: Dear Diary; Deer population grew by 5 amount.(P: 18, GR:21 , DR:-21, Grain: 1018 )
+- Day 290: Dear Diary; Grain grew by 7 amount.(1027)
+- Day 294: Dear Diary; -7 of the Deers got eaten or starved top death.(P: 25, GR:9 , DR:-9, Grain: 970 )
+- Day 294: Dear Diary; Deer population grew by 7 amount.(P: 25, GR:9 , DR:-9, Grain: 1018 )
+- Day 294: Dear Diary; Wolf population grew by 8 amount.(P: 34, GR:8 , DR:-24, Deer: 25 )
+- Day 300: Dear Diary; Grain grew by 53 amount.(898)
+- Day 301: Dear Diary; 12 of the Deers got eaten or starved top death.(P: 13, GR:-10 , DR:10, Grain: 823 )
+- Day 301: Dear Diary; 12 of the Deers got eaten or starved top death.(P: 13, GR:-10 , DR:10, Grain: 874 )
+- Day 308: Dear Diary; -5 of the Deers got eaten or starved top death.(P: 18, GR:19 , DR:-19, Grain: 982 )
+- Day 308: Dear Diary; Deer population grew by 5 amount.(P: 18, GR:19 , DR:-19, Grain: 982 )
+- Day 310: Dear Diary; Some of the grain was eaten by Noah and Deer(966).
+- Day 315: Dear Diary; -6 of the Deers got eaten or starved top death.(P: 24, GR:7 , DR:-7, Grain: 948 )
+- Day 315: Dear Diary; Deer population grew by 6 amount.(P: 24, GR:7 , DR:-7, Grain: 948 )
+- Day 320: Dear Diary; Some of the grain was eaten by Noah and Deer(860).
+- Day 322: Dear Diary; Wolf population grew by 11 amount.(P: 45, GR:11 , DR:-34, Deer: 23 )
+- Day 322: Dear Diary; 11 of the Deers got eaten or starved top death.(P: 13, GR:-10 , DR:10, Grain: 843 )
+- Day 322: Dear Diary; 11 of the Deers got eaten or starved top death.(P: 13, GR:-10 , DR:10, Grain: 843 )
+- Day 329: Dear Diary; -5 of the Deers got eaten or starved top death.(P: 18, GR:18 , DR:-18, Grain: 962 )
+- Day 329: Dear Diary; Deer population grew by 5 amount.(P: 18, GR:18 , DR:-18, Grain: 962 )
+- Day 330: Dear Diary; Some of the grain was eaten by Noah and Deer(963).
+- Day 336: Dear Diary; Wolf population grew by 1 amount.(P: 46, GR:1 , DR:-5, Deer: 17 )
+- Day 336: Dear Diary; -7 of the Deers got eaten or starved top death.(P: 25, GR:8 , DR:-8, Grain: 970 )
+- Day 336: Dear Diary; Deer population grew by 6 amount.(P: 24, GR:8 , DR:-8, Grain: 970 )
+- Day 340: Dear Diary; Some of the grain was eaten by Noah and Deer(902).
+- Day 343: Dear Diary; 10 of the Deers got eaten or starved top death.(P: 14, GR:-9 , DR:9, Grain: 857 )
+- Day 343: Dear Diary; 10 of the Deers got eaten or starved top death.(P: 14, GR:-9 , DR:9, Grain: 857 )
+- Day 350: Dear Diary; Grain grew by 17 amount.(925)
+- Day 350: Dear Diary; -5 of the Deers got eaten or starved top death.(P: 19, GR:14 , DR:-14, Grain: 922 )
+- Day 350: Dear Diary; Deer population grew by 5 amount.(P: 19, GR:14 , DR:-14, Grain: 922 )
+- Day 350: Dear Diary; 8 of the Wolves got eaten or starved top death.(P: 38, GR:-3 , DR:8, Deer: 13 )
+- Day 357: Dear Diary; -3 of the Deers got eaten or starved top death.(P: 22, GR:4 , DR:-4, Grain: 923 )
+- Day 357: Dear Diary; Deer population grew by 3 amount.(P: 22, GR:4 , DR:-4, Grain: 920 )
+- Day 360: Dear Diary; Some of the grain was eaten by Noah and Deer(874).
+- Day 364: Dear Diary; Wolf population grew by 8 amount.(P: 46, GR:8 , DR:-24, Deer: 21 )
+- Day 364: Dear Diary; 8 of the Deers got eaten or starved top death.(P: 14, GR:-7 , DR:7, Grain: 813 )
+- Day 364: Dear Diary; 8 of the Deers got eaten or starved top death.(P: 14, GR:-7 , DR:7, Grain: 813 )
+- Day 370: Dear Diary; Grain grew by 11 amount.(898)
+- Day 371: Dear Diary; -5 of the Deers got eaten or starved top death.(P: 19, GR:13 , DR:-13, Grain: 856 )
+- Day 371: Dear Diary; Deer population grew by 5 amount.(P: 19, GR:13 , DR:-13, Grain: 914 )
+Grain population:830
+Deer population:18
+Wolf population:46
+Noah Survived!
+The process took 0.756326 seconds.
+Done!
+

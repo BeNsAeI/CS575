@@ -1,0 +1,7 @@
+Distribution design pattern for parallelism
+
+- thread to thread: threads communicate to one another
+- Broadcast: master sends al lof the data to all threads
+- Reduction: all threads compute and send to master to get summed
+- scatter: master sends pieces of data to each thread
+- gather: pieces of data computed by threads get put toether in master
