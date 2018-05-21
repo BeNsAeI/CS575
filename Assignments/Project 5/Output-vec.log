@@ -1,0 +1,792 @@
+Initializing the Utility tools
+
+=============== INFORMATION ===============
+OpenMP is ready!
+Using 1 threads.
+Array size is 4000.
+===========================================
+
+The process took 0.000032 seconds.
+Done!
+
+____________________
+
+Initializing the Utility tools
+
+=============== INFORMATION ===============
+OpenMP is ready!
+Using 1 threads.
+Array size is 8000.
+===========================================
+
+The process took 0.000123 seconds.
+Done!
+
+____________________
+
+Initializing the Utility tools
+
+=============== INFORMATION ===============
+OpenMP is ready!
+Using 1 threads.
+Array size is 16000.
+===========================================
+
+The process took 0.000143 seconds.
+Done!
+
+____________________
+
+Initializing the Utility tools
+
+=============== INFORMATION ===============
+OpenMP is ready!
+Using 1 threads.
+Array size is 32000.
+===========================================
+
+The process took 0.000272 seconds.
+Done!
+
+____________________
+
+Initializing the Utility tools
+
+=============== INFORMATION ===============
+OpenMP is ready!
+Using 1 threads.
+Array size is 64000.
+===========================================
+
+The process took 0.000641 seconds.
+Done!
+
+____________________
+
+Initializing the Utility tools
+
+=============== INFORMATION ===============
+OpenMP is ready!
+Using 1 threads.
+Array size is 128000.
+===========================================
+
+The process took 0.001253 seconds.
+Done!
+
+____________________
+
+Initializing the Utility tools
+
+=============== INFORMATION ===============
+OpenMP is ready!
+Using 1 threads.
+Array size is 256000.
+===========================================
+
+The process took 0.002449 seconds.
+Done!
+
+____________________
+
+Initializing the Utility tools
+
+=============== INFORMATION ===============
+OpenMP is ready!
+Using 1 threads.
+Array size is 512000.
+===========================================
+
+The process took 0.004950 seconds.
+Done!
+
+____________________
+
+Initializing the Utility tools
+
+=============== INFORMATION ===============
+OpenMP is ready!
+Using 1 threads.
+Array size is 1024000.
+===========================================
+
+The process took 0.010469 seconds.
+Done!
+
+____________________
+
+Initializing the Utility tools
+
+=============== INFORMATION ===============
+OpenMP is ready!
+Using 1 threads.
+Array size is 2048000.
+===========================================
+
+The process took 0.017064 seconds.
+Done!
+
+____________________
+
+Initializing the Utility tools
+
+=============== INFORMATION ===============
+OpenMP is ready!
+Using 1 threads.
+Array size is 4096000.
+===========================================
+
+The process took 0.034615 seconds.
+Done!
+
+____________________
+
+Initializing the Utility tools
+
+=============== INFORMATION ===============
+OpenMP is ready!
+Using 1 threads.
+Array size is 8192000.
+===========================================
+
+The process took 0.069149 seconds.
+Done!
+
+____________________
+
+Initializing the Utility tools
+
+=============== INFORMATION ===============
+OpenMP is ready!
+Using 1 threads.
+Array size is 16384000.
+===========================================
+
+The process took 0.149419 seconds.
+Done!
+
+____________________
+
+Initializing the Utility tools
+
+=============== INFORMATION ===============
+OpenMP is ready!
+Using 1 threads.
+Array size is 32768000.
+===========================================
+
+The process took 0.297486 seconds.
+Done!
+
+____________________
+
+Initializing the Utility tools
+
+=============== INFORMATION ===============
+OpenMP is ready!
+Using 1 threads.
+Array size is 65536000.
+===========================================
+
+The process took 0.597088 seconds.
+Done!
+
+____________________
+
+
+___________________________________________
+
+Initializing the Utility tools
+
+=============== INFORMATION ===============
+OpenMP is ready!
+Using 2 threads.
+Array size is 4000.
+===========================================
+
+The process took 0.000025 seconds.
+Done!
+
+____________________
+
+Initializing the Utility tools
+
+=============== INFORMATION ===============
+OpenMP is ready!
+Using 2 threads.
+Array size is 8000.
+===========================================
+
+The process took 0.000037 seconds.
+Done!
+
+____________________
+
+Initializing the Utility tools
+
+=============== INFORMATION ===============
+OpenMP is ready!
+Using 2 threads.
+Array size is 16000.
+===========================================
+
+The process took 0.000069 seconds.
+Done!
+
+____________________
+
+Initializing the Utility tools
+
+=============== INFORMATION ===============
+OpenMP is ready!
+Using 2 threads.
+Array size is 32000.
+===========================================
+
+The process took 0.000160 seconds.
+Done!
+
+____________________
+
+Initializing the Utility tools
+
+=============== INFORMATION ===============
+OpenMP is ready!
+Using 2 threads.
+Array size is 64000.
+===========================================
+
+The process took 0.000321 seconds.
+Done!
+
+____________________
+
+Initializing the Utility tools
+
+=============== INFORMATION ===============
+OpenMP is ready!
+Using 2 threads.
+Array size is 128000.
+===========================================
+
+The process took 0.000579 seconds.
+Done!
+
+____________________
+
+Initializing the Utility tools
+
+=============== INFORMATION ===============
+OpenMP is ready!
+Using 2 threads.
+Array size is 256000.
+===========================================
+
+The process took 0.001225 seconds.
+Done!
+
+____________________
+
+Initializing the Utility tools
+
+=============== INFORMATION ===============
+OpenMP is ready!
+Using 2 threads.
+Array size is 512000.
+===========================================
+
+The process took 0.003070 seconds.
+Done!
+
+____________________
+
+Initializing the Utility tools
+
+=============== INFORMATION ===============
+OpenMP is ready!
+Using 2 threads.
+Array size is 1024000.
+===========================================
+
+The process took 0.004362 seconds.
+Done!
+
+____________________
+
+Initializing the Utility tools
+
+=============== INFORMATION ===============
+OpenMP is ready!
+Using 2 threads.
+Array size is 2048000.
+===========================================
+
+The process took 0.010219 seconds.
+Done!
+
+____________________
+
+Initializing the Utility tools
+
+=============== INFORMATION ===============
+OpenMP is ready!
+Using 2 threads.
+Array size is 4096000.
+===========================================
+
+The process took 0.017656 seconds.
+Done!
+
+____________________
+
+Initializing the Utility tools
+
+=============== INFORMATION ===============
+OpenMP is ready!
+Using 2 threads.
+Array size is 8192000.
+===========================================
+
+The process took 0.038070 seconds.
+Done!
+
+____________________
+
+Initializing the Utility tools
+
+=============== INFORMATION ===============
+OpenMP is ready!
+Using 2 threads.
+Array size is 16384000.
+===========================================
+
+The process took 0.096664 seconds.
+Done!
+
+____________________
+
+Initializing the Utility tools
+
+=============== INFORMATION ===============
+OpenMP is ready!
+Using 2 threads.
+Array size is 32768000.
+===========================================
+
+The process took 0.212242 seconds.
+Done!
+
+____________________
+
+Initializing the Utility tools
+
+=============== INFORMATION ===============
+OpenMP is ready!
+Using 2 threads.
+Array size is 65536000.
+===========================================
+
+The process took 0.345329 seconds.
+Done!
+
+____________________
+
+
+___________________________________________
+
+Initializing the Utility tools
+
+=============== INFORMATION ===============
+OpenMP is ready!
+Using 4 threads.
+Array size is 4000.
+===========================================
+
+The process took 0.000020 seconds.
+Done!
+
+____________________
+
+Initializing the Utility tools
+
+=============== INFORMATION ===============
+OpenMP is ready!
+Using 4 threads.
+Array size is 8000.
+===========================================
+
+The process took 0.000023 seconds.
+Done!
+
+____________________
+
+Initializing the Utility tools
+
+=============== INFORMATION ===============
+OpenMP is ready!
+Using 4 threads.
+Array size is 16000.
+===========================================
+
+The process took 0.000052 seconds.
+Done!
+
+____________________
+
+Initializing the Utility tools
+
+=============== INFORMATION ===============
+OpenMP is ready!
+Using 4 threads.
+Array size is 32000.
+===========================================
+
+The process took 0.000083 seconds.
+Done!
+
+____________________
+
+Initializing the Utility tools
+
+=============== INFORMATION ===============
+OpenMP is ready!
+Using 4 threads.
+Array size is 64000.
+===========================================
+
+The process took 0.000169 seconds.
+Done!
+
+____________________
+
+Initializing the Utility tools
+
+=============== INFORMATION ===============
+OpenMP is ready!
+Using 4 threads.
+Array size is 128000.
+===========================================
+
+The process took 0.000318 seconds.
+Done!
+
+____________________
+
+Initializing the Utility tools
+
+=============== INFORMATION ===============
+OpenMP is ready!
+Using 4 threads.
+Array size is 256000.
+===========================================
+
+The process took 0.000649 seconds.
+Done!
+
+____________________
+
+Initializing the Utility tools
+
+=============== INFORMATION ===============
+OpenMP is ready!
+Using 4 threads.
+Array size is 512000.
+===========================================
+
+The process took 0.001276 seconds.
+Done!
+
+____________________
+
+Initializing the Utility tools
+
+=============== INFORMATION ===============
+OpenMP is ready!
+Using 4 threads.
+Array size is 1024000.
+===========================================
+
+The process took 0.002522 seconds.
+Done!
+
+____________________
+
+Initializing the Utility tools
+
+=============== INFORMATION ===============
+OpenMP is ready!
+Using 4 threads.
+Array size is 2048000.
+===========================================
+
+The process took 0.005025 seconds.
+Done!
+
+____________________
+
+Initializing the Utility tools
+
+=============== INFORMATION ===============
+OpenMP is ready!
+Using 4 threads.
+Array size is 4096000.
+===========================================
+
+The process took 0.010772 seconds.
+Done!
+
+____________________
+
+Initializing the Utility tools
+
+=============== INFORMATION ===============
+OpenMP is ready!
+Using 4 threads.
+Array size is 8192000.
+===========================================
+
+The process took 0.024573 seconds.
+Done!
+
+____________________
+
+Initializing the Utility tools
+
+=============== INFORMATION ===============
+OpenMP is ready!
+Using 4 threads.
+Array size is 16384000.
+===========================================
+
+The process took 0.059141 seconds.
+Done!
+
+____________________
+
+Initializing the Utility tools
+
+=============== INFORMATION ===============
+OpenMP is ready!
+Using 4 threads.
+Array size is 32768000.
+===========================================
+
+The process took 0.107837 seconds.
+Done!
+
+____________________
+
+Initializing the Utility tools
+
+=============== INFORMATION ===============
+OpenMP is ready!
+Using 4 threads.
+Array size is 65536000.
+===========================================
+
+The process took 0.189217 seconds.
+Done!
+
+____________________
+
+
+___________________________________________
+
+Initializing the Utility tools
+
+=============== INFORMATION ===============
+OpenMP is ready!
+Using 8 threads.
+Array size is 4000.
+===========================================
+
+The process took 0.000014 seconds.
+Done!
+
+____________________
+
+Initializing the Utility tools
+
+=============== INFORMATION ===============
+OpenMP is ready!
+Using 8 threads.
+Array size is 8000.
+===========================================
+
+The process took 0.000022 seconds.
+Done!
+
+____________________
+
+Initializing the Utility tools
+
+=============== INFORMATION ===============
+OpenMP is ready!
+Using 8 threads.
+Array size is 16000.
+===========================================
+
+The process took 0.000038 seconds.
+Done!
+
+____________________
+
+Initializing the Utility tools
+
+=============== INFORMATION ===============
+OpenMP is ready!
+Using 8 threads.
+Array size is 32000.
+===========================================
+
+The process took 0.000073 seconds.
+Done!
+
+____________________
+
+Initializing the Utility tools
+
+=============== INFORMATION ===============
+OpenMP is ready!
+Using 8 threads.
+Array size is 64000.
+===========================================
+
+The process took 0.000122 seconds.
+Done!
+
+____________________
+
+Initializing the Utility tools
+
+=============== INFORMATION ===============
+OpenMP is ready!
+Using 8 threads.
+Array size is 128000.
+===========================================
+
+The process took 0.000201 seconds.
+Done!
+
+____________________
+
+Initializing the Utility tools
+
+=============== INFORMATION ===============
+OpenMP is ready!
+Using 8 threads.
+Array size is 256000.
+===========================================
+
+The process took 0.000452 seconds.
+Done!
+
+____________________
+
+Initializing the Utility tools
+
+=============== INFORMATION ===============
+OpenMP is ready!
+Using 8 threads.
+Array size is 512000.
+===========================================
+
+The process took 0.000948 seconds.
+Done!
+
+____________________
+
+Initializing the Utility tools
+
+=============== INFORMATION ===============
+OpenMP is ready!
+Using 8 threads.
+Array size is 1024000.
+===========================================
+
+The process took 0.001832 seconds.
+Done!
+
+____________________
+
+Initializing the Utility tools
+
+=============== INFORMATION ===============
+OpenMP is ready!
+Using 8 threads.
+Array size is 2048000.
+===========================================
+
+The process took 0.004587 seconds.
+Done!
+
+____________________
+
+Initializing the Utility tools
+
+=============== INFORMATION ===============
+OpenMP is ready!
+Using 8 threads.
+Array size is 4096000.
+===========================================
+
+The process took 0.006984 seconds.
+Done!
+
+____________________
+
+Initializing the Utility tools
+
+=============== INFORMATION ===============
+OpenMP is ready!
+Using 8 threads.
+Array size is 8192000.
+===========================================
+
+The process took 0.025145 seconds.
+Done!
+
+____________________
+
+Initializing the Utility tools
+
+=============== INFORMATION ===============
+OpenMP is ready!
+Using 8 threads.
+Array size is 16384000.
+===========================================
+
+The process took 0.027647 seconds.
+Done!
+
+____________________
+
+Initializing the Utility tools
+
+=============== INFORMATION ===============
+OpenMP is ready!
+Using 8 threads.
+Array size is 32768000.
+===========================================
+
+The process took 0.084253 seconds.
+Done!
+
+____________________
+
+Initializing the Utility tools
+
+=============== INFORMATION ===============
+OpenMP is ready!
+Using 8 threads.
+Array size is 65536000.
+===========================================
+
+The process took 0.113469 seconds.
+Done!
+
+____________________
+
+
+___________________________________________
+

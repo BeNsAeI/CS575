@@ -1,0 +1,37 @@
+
+Begin optimization report for: main(int, char **)
+
+    Report from: Vector optimizations [vec]
+
+
+LOOP BEGIN at main.cpp(50,2)
+   remark #15527: loop was not vectorized: function call to rand cannot be vectorized   [ main.cpp(52,10) ]
+LOOP END
+
+LOOP BEGIN at main.cpp(61,2)
+<Peeled>
+LOOP END
+
+LOOP BEGIN at main.cpp(61,2)
+   remark #15300: LOOP WAS VECTORIZED
+   remark #15442: entire loop may be executed in remainder
+   remark #15448: unmasked aligned unit stride loads: 1 
+   remark #15449: unmasked aligned unit stride stores: 1 
+   remark #15467: unmasked aligned streaming stores: 2 
+   remark #15475: --- begin vector loop cost summary ---
+   remark #15476: scalar loop cost: 47 
+   remark #15477: vector loop cost: 17.000 
+   remark #15478: estimated potential speedup: 2.760 
+   remark #15479: lightweight vector operations: 3 
+   remark #15480: medium-overhead vector operations: 1 
+   remark #15488: --- end vector loop cost summary ---
+LOOP END
+
+LOOP BEGIN at main.cpp(61,2)
+   remark #25460: No loop optimizations reported
+LOOP END
+
+LOOP BEGIN at main.cpp(61,2)
+<Remainder>
+LOOP END
+===========================================================================

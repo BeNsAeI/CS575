@@ -1,0 +1,792 @@
+[33mInitializing the Utility tools
+[0m[34m
+=============== [33mINFORMATION[34m ===============
+[0mOpenMP is ready!
+Using [36m1[0m threads.
+Array size is [33m4000[0m.
+[34m===========================================
+
+[0mThe process took 0.000032 seconds.
+[33mDone!
+[0m
+____________________
+
+[33mInitializing the Utility tools
+[0m[34m
+=============== [33mINFORMATION[34m ===============
+[0mOpenMP is ready!
+Using [36m1[0m threads.
+Array size is [33m8000[0m.
+[34m===========================================
+
+[0mThe process took 0.000123 seconds.
+[33mDone!
+[0m
+____________________
+
+[33mInitializing the Utility tools
+[0m[34m
+=============== [33mINFORMATION[34m ===============
+[0mOpenMP is ready!
+Using [36m1[0m threads.
+Array size is [33m16000[0m.
+[34m===========================================
+
+[0mThe process took 0.000143 seconds.
+[33mDone!
+[0m
+____________________
+
+[33mInitializing the Utility tools
+[0m[34m
+=============== [33mINFORMATION[34m ===============
+[0mOpenMP is ready!
+Using [36m1[0m threads.
+Array size is [33m32000[0m.
+[34m===========================================
+
+[0mThe process took 0.000272 seconds.
+[33mDone!
+[0m
+____________________
+
+[33mInitializing the Utility tools
+[0m[34m
+=============== [33mINFORMATION[34m ===============
+[0mOpenMP is ready!
+Using [36m1[0m threads.
+Array size is [33m64000[0m.
+[34m===========================================
+
+[0mThe process took 0.000641 seconds.
+[33mDone!
+[0m
+____________________
+
+[33mInitializing the Utility tools
+[0m[34m
+=============== [33mINFORMATION[34m ===============
+[0mOpenMP is ready!
+Using [36m1[0m threads.
+Array size is [33m128000[0m.
+[34m===========================================
+
+[0mThe process took 0.001253 seconds.
+[33mDone!
+[0m
+____________________
+
+[33mInitializing the Utility tools
+[0m[34m
+=============== [33mINFORMATION[34m ===============
+[0mOpenMP is ready!
+Using [36m1[0m threads.
+Array size is [33m256000[0m.
+[34m===========================================
+
+[0mThe process took 0.002449 seconds.
+[33mDone!
+[0m
+____________________
+
+[33mInitializing the Utility tools
+[0m[34m
+=============== [33mINFORMATION[34m ===============
+[0mOpenMP is ready!
+Using [36m1[0m threads.
+Array size is [33m512000[0m.
+[34m===========================================
+
+[0mThe process took 0.004950 seconds.
+[33mDone!
+[0m
+____________________
+
+[33mInitializing the Utility tools
+[0m[34m
+=============== [33mINFORMATION[34m ===============
+[0mOpenMP is ready!
+Using [36m1[0m threads.
+Array size is [33m1024000[0m.
+[34m===========================================
+
+[0mThe process took 0.010469 seconds.
+[33mDone!
+[0m
+____________________
+
+[33mInitializing the Utility tools
+[0m[34m
+=============== [33mINFORMATION[34m ===============
+[0mOpenMP is ready!
+Using [36m1[0m threads.
+Array size is [33m2048000[0m.
+[34m===========================================
+
+[0mThe process took 0.017064 seconds.
+[33mDone!
+[0m
+____________________
+
+[33mInitializing the Utility tools
+[0m[34m
+=============== [33mINFORMATION[34m ===============
+[0mOpenMP is ready!
+Using [36m1[0m threads.
+Array size is [33m4096000[0m.
+[34m===========================================
+
+[0mThe process took 0.034615 seconds.
+[33mDone!
+[0m
+____________________
+
+[33mInitializing the Utility tools
+[0m[34m
+=============== [33mINFORMATION[34m ===============
+[0mOpenMP is ready!
+Using [36m1[0m threads.
+Array size is [33m8192000[0m.
+[34m===========================================
+
+[0mThe process took 0.069149 seconds.
+[33mDone!
+[0m
+____________________
+
+[33mInitializing the Utility tools
+[0m[34m
+=============== [33mINFORMATION[34m ===============
+[0mOpenMP is ready!
+Using [36m1[0m threads.
+Array size is [33m16384000[0m.
+[34m===========================================
+
+[0mThe process took 0.149419 seconds.
+[33mDone!
+[0m
+____________________
+
+[33mInitializing the Utility tools
+[0m[34m
+=============== [33mINFORMATION[34m ===============
+[0mOpenMP is ready!
+Using [36m1[0m threads.
+Array size is [33m32768000[0m.
+[34m===========================================
+
+[0mThe process took 0.297486 seconds.
+[33mDone!
+[0m
+____________________
+
+[33mInitializing the Utility tools
+[0m[34m
+=============== [33mINFORMATION[34m ===============
+[0mOpenMP is ready!
+Using [36m1[0m threads.
+Array size is [33m65536000[0m.
+[34m===========================================
+
+[0mThe process took 0.597088 seconds.
+[33mDone!
+[0m
+____________________
+
+
+___________________________________________
+
+[33mInitializing the Utility tools
+[0m[34m
+=============== [33mINFORMATION[34m ===============
+[0mOpenMP is ready!
+Using [36m2[0m threads.
+Array size is [33m4000[0m.
+[34m===========================================
+
+[0mThe process took 0.000025 seconds.
+[33mDone!
+[0m
+____________________
+
+[33mInitializing the Utility tools
+[0m[34m
+=============== [33mINFORMATION[34m ===============
+[0mOpenMP is ready!
+Using [36m2[0m threads.
+Array size is [33m8000[0m.
+[34m===========================================
+
+[0mThe process took 0.000037 seconds.
+[33mDone!
+[0m
+____________________
+
+[33mInitializing the Utility tools
+[0m[34m
+=============== [33mINFORMATION[34m ===============
+[0mOpenMP is ready!
+Using [36m2[0m threads.
+Array size is [33m16000[0m.
+[34m===========================================
+
+[0mThe process took 0.000069 seconds.
+[33mDone!
+[0m
+____________________
+
+[33mInitializing the Utility tools
+[0m[34m
+=============== [33mINFORMATION[34m ===============
+[0mOpenMP is ready!
+Using [36m2[0m threads.
+Array size is [33m32000[0m.
+[34m===========================================
+
+[0mThe process took 0.000160 seconds.
+[33mDone!
+[0m
+____________________
+
+[33mInitializing the Utility tools
+[0m[34m
+=============== [33mINFORMATION[34m ===============
+[0mOpenMP is ready!
+Using [36m2[0m threads.
+Array size is [33m64000[0m.
+[34m===========================================
+
+[0mThe process took 0.000321 seconds.
+[33mDone!
+[0m
+____________________
+
+[33mInitializing the Utility tools
+[0m[34m
+=============== [33mINFORMATION[34m ===============
+[0mOpenMP is ready!
+Using [36m2[0m threads.
+Array size is [33m128000[0m.
+[34m===========================================
+
+[0mThe process took 0.000579 seconds.
+[33mDone!
+[0m
+____________________
+
+[33mInitializing the Utility tools
+[0m[34m
+=============== [33mINFORMATION[34m ===============
+[0mOpenMP is ready!
+Using [36m2[0m threads.
+Array size is [33m256000[0m.
+[34m===========================================
+
+[0mThe process took 0.001225 seconds.
+[33mDone!
+[0m
+____________________
+
+[33mInitializing the Utility tools
+[0m[34m
+=============== [33mINFORMATION[34m ===============
+[0mOpenMP is ready!
+Using [36m2[0m threads.
+Array size is [33m512000[0m.
+[34m===========================================
+
+[0mThe process took 0.003070 seconds.
+[33mDone!
+[0m
+____________________
+
+[33mInitializing the Utility tools
+[0m[34m
+=============== [33mINFORMATION[34m ===============
+[0mOpenMP is ready!
+Using [36m2[0m threads.
+Array size is [33m1024000[0m.
+[34m===========================================
+
+[0mThe process took 0.004362 seconds.
+[33mDone!
+[0m
+____________________
+
+[33mInitializing the Utility tools
+[0m[34m
+=============== [33mINFORMATION[34m ===============
+[0mOpenMP is ready!
+Using [36m2[0m threads.
+Array size is [33m2048000[0m.
+[34m===========================================
+
+[0mThe process took 0.010219 seconds.
+[33mDone!
+[0m
+____________________
+
+[33mInitializing the Utility tools
+[0m[34m
+=============== [33mINFORMATION[34m ===============
+[0mOpenMP is ready!
+Using [36m2[0m threads.
+Array size is [33m4096000[0m.
+[34m===========================================
+
+[0mThe process took 0.017656 seconds.
+[33mDone!
+[0m
+____________________
+
+[33mInitializing the Utility tools
+[0m[34m
+=============== [33mINFORMATION[34m ===============
+[0mOpenMP is ready!
+Using [36m2[0m threads.
+Array size is [33m8192000[0m.
+[34m===========================================
+
+[0mThe process took 0.038070 seconds.
+[33mDone!
+[0m
+____________________
+
+[33mInitializing the Utility tools
+[0m[34m
+=============== [33mINFORMATION[34m ===============
+[0mOpenMP is ready!
+Using [36m2[0m threads.
+Array size is [33m16384000[0m.
+[34m===========================================
+
+[0mThe process took 0.096664 seconds.
+[33mDone!
+[0m
+____________________
+
+[33mInitializing the Utility tools
+[0m[34m
+=============== [33mINFORMATION[34m ===============
+[0mOpenMP is ready!
+Using [36m2[0m threads.
+Array size is [33m32768000[0m.
+[34m===========================================
+
+[0mThe process took 0.212242 seconds.
+[33mDone!
+[0m
+____________________
+
+[33mInitializing the Utility tools
+[0m[34m
+=============== [33mINFORMATION[34m ===============
+[0mOpenMP is ready!
+Using [36m2[0m threads.
+Array size is [33m65536000[0m.
+[34m===========================================
+
+[0mThe process took 0.345329 seconds.
+[33mDone!
+[0m
+____________________
+
+
+___________________________________________
+
+[33mInitializing the Utility tools
+[0m[34m
+=============== [33mINFORMATION[34m ===============
+[0mOpenMP is ready!
+Using [36m4[0m threads.
+Array size is [33m4000[0m.
+[34m===========================================
+
+[0mThe process took 0.000020 seconds.
+[33mDone!
+[0m
+____________________
+
+[33mInitializing the Utility tools
+[0m[34m
+=============== [33mINFORMATION[34m ===============
+[0mOpenMP is ready!
+Using [36m4[0m threads.
+Array size is [33m8000[0m.
+[34m===========================================
+
+[0mThe process took 0.000023 seconds.
+[33mDone!
+[0m
+____________________
+
+[33mInitializing the Utility tools
+[0m[34m
+=============== [33mINFORMATION[34m ===============
+[0mOpenMP is ready!
+Using [36m4[0m threads.
+Array size is [33m16000[0m.
+[34m===========================================
+
+[0mThe process took 0.000052 seconds.
+[33mDone!
+[0m
+____________________
+
+[33mInitializing the Utility tools
+[0m[34m
+=============== [33mINFORMATION[34m ===============
+[0mOpenMP is ready!
+Using [36m4[0m threads.
+Array size is [33m32000[0m.
+[34m===========================================
+
+[0mThe process took 0.000083 seconds.
+[33mDone!
+[0m
+____________________
+
+[33mInitializing the Utility tools
+[0m[34m
+=============== [33mINFORMATION[34m ===============
+[0mOpenMP is ready!
+Using [36m4[0m threads.
+Array size is [33m64000[0m.
+[34m===========================================
+
+[0mThe process took 0.000169 seconds.
+[33mDone!
+[0m
+____________________
+
+[33mInitializing the Utility tools
+[0m[34m
+=============== [33mINFORMATION[34m ===============
+[0mOpenMP is ready!
+Using [36m4[0m threads.
+Array size is [33m128000[0m.
+[34m===========================================
+
+[0mThe process took 0.000318 seconds.
+[33mDone!
+[0m
+____________________
+
+[33mInitializing the Utility tools
+[0m[34m
+=============== [33mINFORMATION[34m ===============
+[0mOpenMP is ready!
+Using [36m4[0m threads.
+Array size is [33m256000[0m.
+[34m===========================================
+
+[0mThe process took 0.000649 seconds.
+[33mDone!
+[0m
+____________________
+
+[33mInitializing the Utility tools
+[0m[34m
+=============== [33mINFORMATION[34m ===============
+[0mOpenMP is ready!
+Using [36m4[0m threads.
+Array size is [33m512000[0m.
+[34m===========================================
+
+[0mThe process took 0.001276 seconds.
+[33mDone!
+[0m
+____________________
+
+[33mInitializing the Utility tools
+[0m[34m
+=============== [33mINFORMATION[34m ===============
+[0mOpenMP is ready!
+Using [36m4[0m threads.
+Array size is [33m1024000[0m.
+[34m===========================================
+
+[0mThe process took 0.002522 seconds.
+[33mDone!
+[0m
+____________________
+
+[33mInitializing the Utility tools
+[0m[34m
+=============== [33mINFORMATION[34m ===============
+[0mOpenMP is ready!
+Using [36m4[0m threads.
+Array size is [33m2048000[0m.
+[34m===========================================
+
+[0mThe process took 0.005025 seconds.
+[33mDone!
+[0m
+____________________
+
+[33mInitializing the Utility tools
+[0m[34m
+=============== [33mINFORMATION[34m ===============
+[0mOpenMP is ready!
+Using [36m4[0m threads.
+Array size is [33m4096000[0m.
+[34m===========================================
+
+[0mThe process took 0.010772 seconds.
+[33mDone!
+[0m
+____________________
+
+[33mInitializing the Utility tools
+[0m[34m
+=============== [33mINFORMATION[34m ===============
+[0mOpenMP is ready!
+Using [36m4[0m threads.
+Array size is [33m8192000[0m.
+[34m===========================================
+
+[0mThe process took 0.024573 seconds.
+[33mDone!
+[0m
+____________________
+
+[33mInitializing the Utility tools
+[0m[34m
+=============== [33mINFORMATION[34m ===============
+[0mOpenMP is ready!
+Using [36m4[0m threads.
+Array size is [33m16384000[0m.
+[34m===========================================
+
+[0mThe process took 0.059141 seconds.
+[33mDone!
+[0m
+____________________
+
+[33mInitializing the Utility tools
+[0m[34m
+=============== [33mINFORMATION[34m ===============
+[0mOpenMP is ready!
+Using [36m4[0m threads.
+Array size is [33m32768000[0m.
+[34m===========================================
+
+[0mThe process took 0.107837 seconds.
+[33mDone!
+[0m
+____________________
+
+[33mInitializing the Utility tools
+[0m[34m
+=============== [33mINFORMATION[34m ===============
+[0mOpenMP is ready!
+Using [36m4[0m threads.
+Array size is [33m65536000[0m.
+[34m===========================================
+
+[0mThe process took 0.189217 seconds.
+[33mDone!
+[0m
+____________________
+
+
+___________________________________________
+
+[33mInitializing the Utility tools
+[0m[34m
+=============== [33mINFORMATION[34m ===============
+[0mOpenMP is ready!
+Using [36m8[0m threads.
+Array size is [33m4000[0m.
+[34m===========================================
+
+[0mThe process took 0.000014 seconds.
+[33mDone!
+[0m
+____________________
+
+[33mInitializing the Utility tools
+[0m[34m
+=============== [33mINFORMATION[34m ===============
+[0mOpenMP is ready!
+Using [36m8[0m threads.
+Array size is [33m8000[0m.
+[34m===========================================
+
+[0mThe process took 0.000022 seconds.
+[33mDone!
+[0m
+____________________
+
+[33mInitializing the Utility tools
+[0m[34m
+=============== [33mINFORMATION[34m ===============
+[0mOpenMP is ready!
+Using [36m8[0m threads.
+Array size is [33m16000[0m.
+[34m===========================================
+
+[0mThe process took 0.000038 seconds.
+[33mDone!
+[0m
+____________________
+
+[33mInitializing the Utility tools
+[0m[34m
+=============== [33mINFORMATION[34m ===============
+[0mOpenMP is ready!
+Using [36m8[0m threads.
+Array size is [33m32000[0m.
+[34m===========================================
+
+[0mThe process took 0.000073 seconds.
+[33mDone!
+[0m
+____________________
+
+[33mInitializing the Utility tools
+[0m[34m
+=============== [33mINFORMATION[34m ===============
+[0mOpenMP is ready!
+Using [36m8[0m threads.
+Array size is [33m64000[0m.
+[34m===========================================
+
+[0mThe process took 0.000122 seconds.
+[33mDone!
+[0m
+____________________
+
+[33mInitializing the Utility tools
+[0m[34m
+=============== [33mINFORMATION[34m ===============
+[0mOpenMP is ready!
+Using [36m8[0m threads.
+Array size is [33m128000[0m.
+[34m===========================================
+
+[0mThe process took 0.000201 seconds.
+[33mDone!
+[0m
+____________________
+
+[33mInitializing the Utility tools
+[0m[34m
+=============== [33mINFORMATION[34m ===============
+[0mOpenMP is ready!
+Using [36m8[0m threads.
+Array size is [33m256000[0m.
+[34m===========================================
+
+[0mThe process took 0.000452 seconds.
+[33mDone!
+[0m
+____________________
+
+[33mInitializing the Utility tools
+[0m[34m
+=============== [33mINFORMATION[34m ===============
+[0mOpenMP is ready!
+Using [36m8[0m threads.
+Array size is [33m512000[0m.
+[34m===========================================
+
+[0mThe process took 0.000948 seconds.
+[33mDone!
+[0m
+____________________
+
+[33mInitializing the Utility tools
+[0m[34m
+=============== [33mINFORMATION[34m ===============
+[0mOpenMP is ready!
+Using [36m8[0m threads.
+Array size is [33m1024000[0m.
+[34m===========================================
+
+[0mThe process took 0.001832 seconds.
+[33mDone!
+[0m
+____________________
+
+[33mInitializing the Utility tools
+[0m[34m
+=============== [33mINFORMATION[34m ===============
+[0mOpenMP is ready!
+Using [36m8[0m threads.
+Array size is [33m2048000[0m.
+[34m===========================================
+
+[0mThe process took 0.004587 seconds.
+[33mDone!
+[0m
+____________________
+
+[33mInitializing the Utility tools
+[0m[34m
+=============== [33mINFORMATION[34m ===============
+[0mOpenMP is ready!
+Using [36m8[0m threads.
+Array size is [33m4096000[0m.
+[34m===========================================
+
+[0mThe process took 0.006984 seconds.
+[33mDone!
+[0m
+____________________
+
+[33mInitializing the Utility tools
+[0m[34m
+=============== [33mINFORMATION[34m ===============
+[0mOpenMP is ready!
+Using [36m8[0m threads.
+Array size is [33m8192000[0m.
+[34m===========================================
+
+[0mThe process took 0.025145 seconds.
+[33mDone!
+[0m
+____________________
+
+[33mInitializing the Utility tools
+[0m[34m
+=============== [33mINFORMATION[34m ===============
+[0mOpenMP is ready!
+Using [36m8[0m threads.
+Array size is [33m16384000[0m.
+[34m===========================================
+
+[0mThe process took 0.027647 seconds.
+[33mDone!
+[0m
+____________________
+
+[33mInitializing the Utility tools
+[0m[34m
+=============== [33mINFORMATION[34m ===============
+[0mOpenMP is ready!
+Using [36m8[0m threads.
+Array size is [33m32768000[0m.
+[34m===========================================
+
+[0mThe process took 0.084253 seconds.
+[33mDone!
+[0m
+____________________
+
+[33mInitializing the Utility tools
+[0m[34m
+=============== [33mINFORMATION[34m ===============
+[0mOpenMP is ready!
+Using [36m8[0m threads.
+Array size is [33m65536000[0m.
+[34m===========================================
+
+[0mThe process took 0.113469 seconds.
+[33mDone!
+[0m
+____________________
+
+
+___________________________________________
+
