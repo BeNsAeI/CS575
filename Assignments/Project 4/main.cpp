@@ -13,7 +13,7 @@
 #include "color.h"
 #include "const.h"
 
-#define MAXDAYS  378 /*378*/
+#define MAXDAYS  72 /*378*/
 
 class Agent{
 public:
@@ -48,6 +48,7 @@ omp_lock_t WolfLock;
 
 bool dayPass = false;
 float NowTemp;
+float NowPrecip;
 
 float Ranf( float low, float high, unsigned int* seed )
 {
@@ -82,12 +83,12 @@ void pGrain()
 			omp_set_lock(&GrainLock);
 			Grain.Rep();
 			omp_unset_lock(&GrainLock);
-			if (Grain.tmpPop > Grain.Pop && i % 10 == 0)
-				printf( ANSI_COLOR_YELLOW "- Day %d: Dear Diary; Some of the grain was eaten by Noah and Deer(%d).\n" ANSI_COLOR_RESET,i,Grain.Pop);
-			if (Grain.tmpPop < Grain.Pop && i % 10 == 0)
-				printf( ANSI_COLOR_CYAN "- Day %d: Dear Diary; Grain grew by %d amount.(%d)\n"ANSI_COLOR_RESET, i, Grain.Pop - Grain.tmpPop,Grain.Pop);
+			if (Grain.tmpPop > Grain.Pop)
+				printf( ANSI_COLOR_YELLOW "- Month %d: Dear Diary; Some of the grain was eaten by Noah and Deer(%d)(temp: %#f, precip: %#f).\n" ANSI_COLOR_RESET,i,Grain.Pop,NowTemp,NowPrecip);
+			if (Grain.tmpPop < Grain.Pop)
+				printf( ANSI_COLOR_CYAN "- Month %d: Dear Diary; Grain grew by %d amount.(%d)(temp: %#f, precip: %#f)\n"ANSI_COLOR_RESET, i, Grain.Pop - Grain.tmpPop,Grain.Pop,NowTemp,NowPrecip);
 			Grain.tmpPop = Grain.Pop;
-			Grain.GR = 25+ (int)NowTemp;
+			Grain.GR = (25 + (int)NowTemp)*30;
 			Grain.DR = 0;
 		}
 		#pragma omp barrier
@@ -95,7 +96,7 @@ void pGrain()
 	}
 	if(!Grain.isAlive())
 	{
-		printf( ANSI_COLOR_RED "- Day %d: Dear Diary; Noah ran out of Grain!\n"ANSI_COLOR_RESET, i);
+		printf( ANSI_COLOR_RED "- Month %d: Dear Diary; Noah ran out of Grain!\n"ANSI_COLOR_RESET, i);
 	}
 	std::cout << "Grain population:" << Grain.Pop << std:: endl;
 	omp_unset_lock(&GrainLock);
@@ -115,9 +116,11 @@ void pDeer()
 			Deer.Rep();
 			omp_unset_lock(&DeerLock);
 			if (Deer.tmpPop > Deer.Pop)
-				printf( ANSI_COLOR_YELLOW "- Day %d: Dear Diary; %d of the Deers got eaten or starved top death.(P: %d, GR:%d , DR:%d, Grain: %d )\n" ANSI_COLOR_RESET,i, Deer.tmpPop - Deer.Pop,Deer.Pop,Deer.GR,Deer.DR, Grain.Pop);printf( ANSI_COLOR_YELLOW "- Day %d: Dear Diary; %d of the Deers got eaten or starved top death.(P: %d, GR:%d , DR:%d, Grain: %d )\n" ANSI_COLOR_RESET,i, Deer.tmpPop - Deer.Pop,Deer.Pop,Deer.GR,Deer.DR, Grain.Pop);
+				printf( ANSI_COLOR_YELLOW "- Month %d: Dear Diary; %d of the Deers got eaten or starved top death.(P: %d, GR:%d , DR:%d, Grain: %d )\n" ANSI_COLOR_RESET,i, Deer.tmpPop - Deer.Pop,Deer.Pop,Deer.GR,Deer.DR, Grain.Pop);printf( ANSI_COLOR_YELLOW "- Month %d: Dear Diary; %d of the Deers got eaten or starved top death.(P: %d, GR:%d , DR:%d, Grain: %d )\n" ANSI_COLOR_RESET,i, Deer.tmpPop - Deer.Pop,Deer.Pop,Deer.GR,Deer.DR, Grain.Pop);
 			if (Deer.tmpPop < Deer.Pop)
-				printf( ANSI_COLOR_CYAN "- Day %d: Dear Diary; Deer population grew by %d amount.(P: %d, GR:%d , DR:%d, Grain: %d )\n" ANSI_COLOR_RESET, i , Deer.Pop - Deer.tmpPop,Deer.Pop,Deer.GR,Deer.DR,Grain.Pop);
+				printf( ANSI_COLOR_CYAN "- Month %d: Dear Diary; Deer population grew by %d amount.(P: %d, GR:%d , DR:%d, Grain: %d )\n" ANSI_COLOR_RESET, i , Deer.Pop - Deer.tmpPop,Deer.Pop,Deer.GR,Deer.DR,Grain.Pop);
+			if (Deer.tmpPop == Deer.Pop)
+				printf( ANSI_COLOR_CYAN "- Month %d: Dear Diary; Deer population did not change.(P: %d, GR:%d , DR:%d, Grain: %d )\n" ANSI_COLOR_RESET, i ,Deer.Pop,Deer.GR,Deer.DR,Grain.Pop);
 			Deer.tmpPop = Deer.Pop;
 		}
 		if(Deer.isAlive())
@@ -125,8 +128,8 @@ void pDeer()
 			omp_set_lock(&GrainLock);
 			Grain.Pop -= Deer.Pop * 3;
 			omp_unset_lock(&GrainLock);
-			Deer.GR = (Grain.Pop - Deer.Pop * 3 * 7)/21 - Deer.Pop - 1;
-			Deer.DR = std::min(Deer.Pop - (Grain.Pop - Deer.Pop * 3 * 7)/21,Deer.Pop/2) + 1;
+			Deer.GR = (Grain.Pop - Deer.Pop * 3 * 30)/90 - Deer.Pop - 1;
+			Deer.DR = std::min(Deer.Pop - (Grain.Pop - Deer.Pop * 3 * 30)/21,Deer.Pop/2) + 1;
 		}
 		else
 		{
@@ -139,7 +142,7 @@ void pDeer()
 	}
 	if(!Deer.isAlive())
 	{
-		printf( ANSI_COLOR_RED "- Day %d: Dear Diary; All deers are dead.(GR: %d, DR: %d)\n"ANSI_COLOR_RESET,i,Deer.GR, Deer.DR);
+		printf( ANSI_COLOR_RED "- Month %d: Dear Diary; All deers are dead.(GR: %d, DR: %d)\n"ANSI_COLOR_RESET,i,Deer.GR, Deer.DR);
 	}
 	for(int j = 0; j < 100000000; j++);
 	std::cout << "Deer population:" << Deer.Pop << std:: endl;
@@ -161,13 +164,13 @@ void pWolf()
 			Wolf.Rep();
 			omp_unset_lock(&WolfLock);
 			if (Wolf.tmpPop > Wolf.Pop)
-				printf( ANSI_COLOR_YELLOW "- Day %d: Dear Diary; %d of the Wolves got eaten or starved top death.(P: %d, GR:%d , DR:%d, Deer: %d )\n" ANSI_COLOR_RESET,i, Wolf.tmpPop - Wolf.Pop,Wolf.Pop,Wolf.GR,Wolf.DR, Deer.Pop);
+				printf( ANSI_COLOR_YELLOW "- Month %d: Dear Diary; %d of the Wolves got eaten or starved top death.(P: %d, GR:%d , DR:%d, Deer: %d )\n" ANSI_COLOR_RESET,i, Wolf.tmpPop - Wolf.Pop,Wolf.Pop,Wolf.GR,Wolf.DR, Deer.Pop);
 			if (Wolf.tmpPop < Wolf.Pop)
-				printf( ANSI_COLOR_CYAN "- Day %d: Dear Diary; Wolf population grew by %d amount.(P: %d, GR:%d , DR:%d, Deer: %d )\n" ANSI_COLOR_RESET, i , Wolf.Pop - Wolf.tmpPop,Wolf.Pop,Wolf.GR,Wolf.DR,Deer.Pop);
+				printf( ANSI_COLOR_CYAN "- Month %d: Dear Diary; Wolf population grew by %d amount.(P: %d, GR:%d , DR:%d, Deer: %d )\n" ANSI_COLOR_RESET, i , Wolf.Pop - Wolf.tmpPop,Wolf.Pop,Wolf.GR,Wolf.DR,Deer.Pop);
 			Wolf.tmpPop = Wolf.Pop;
 		}
 		// eat
-		if (i % 6 == 0 && Wolf.isAlive())
+		if (Wolf.isAlive())
 		{
 			omp_set_lock(&DeerLock);
 			Deer.Pop -= 1;
@@ -189,7 +192,7 @@ void pWolf()
 
 	}
 	if(!Wolf.isAlive())
-		printf( ANSI_COLOR_RED "- Day %d: Dear Diary; All wolves are dead.(GR: %d, DR: %d)\n"ANSI_COLOR_RESET,i,Wolf.GR, Wolf.DR);
+		printf( ANSI_COLOR_RED "- Month %d: Dear Diary; All wolves are dead.(GR: %d, DR: %d)\n"ANSI_COLOR_RESET,i,Wolf.GR, Wolf.DR);
 	for(int j = 0; j < 200000000; j++);
 	std::cout << "Wolf population:" << Wolf.Pop << std:: endl;
 	omp_unset_lock(&GrainLock);
@@ -211,7 +214,7 @@ void pNoah(float * NowPrecip, int NowMonth , float * NowTemp, unsigned int seed)
 			if (Grain.Pop > Deer.Pop && Grain.Pop > Wolf.Pop)
 			{
 				omp_set_lock(&GrainLock);
-				Grain.Pop -= 3;
+				Grain.Pop -= 90;
 				omp_unset_lock(&GrainLock);
 			}
 			if (Deer.Pop > Grain.Pop && Deer.Pop > Wolf.Pop)
@@ -229,12 +232,11 @@ void pNoah(float * NowPrecip, int NowMonth , float * NowTemp, unsigned int seed)
 		}
 		#pragma omp barrier
 		i++;
-//		Watcher(&NowPrecip, NowMonth , &NowTemp, seed);
 		seed = rand();
 		setWeather(NowPrecip, NowMonth , NowTemp, seed);
 	}
 	if(!Noah.isAlive())
-		printf( ANSI_COLOR_RED "- Day %d: Noah starved to death...(Grain: %d, Deer: %d, Wolf: %d)\n"ANSI_COLOR_RESET,i,Grain.Pop, Deer.Pop, Wolf.Pop);
+		printf( ANSI_COLOR_RED "- Month %d: Noah starved to death...(Grain: %d, Deer: %d, Wolf: %d)\n"ANSI_COLOR_RESET,i,Grain.Pop, Deer.Pop, Wolf.Pop);
 	for(int j = 0; j < 300000000; j++);
 	if(Noah.isAlive())
 		std::cout << "Noah Survived!" << std::endl;
@@ -261,7 +263,7 @@ int main( int argc, char *argv[])
 	int  NowYear = 2014;		// 2014 - 2019
 	int  NowMonth = 0;		// 0 - 11
 
-	float NowPrecip;		// inches of rain per month
+//	float NowPrecip;		// inches of rain per month
 	//float NowTemp;			// temperature this month
 	float NowHeight = 1.0;		// grain height in inches
 	int  NowNumDeer = 1;		// current deer population
@@ -288,17 +290,17 @@ int main( int argc, char *argv[])
 	omp_set_num_threads(NUMTHREADS);
 	int numProcessors = omp_get_num_procs( );
 
-	Grain.GR = 50;
+	Grain.GR = 50*30;
 	Grain.DR = 0;
-	Grain.Pop = 100;
+	Grain.Pop = rand() % 1000 + 1000;
 
 	Deer.GR = 0;
 	Deer.DR = 0;
-	Deer.Pop = 6;
+	Deer.Pop = rand() % 20 + 20;
 
 	Wolf.GR = 0;
 	Wolf.DR = 0;
-	Wolf.Pop = 2;
+	Wolf.Pop = rand() % 20 + 20;
 
 	Noah.GR = 0;
 	Noah.DR = 0;
@@ -323,7 +325,7 @@ int main( int argc, char *argv[])
 		std::cout << "So Noah built the boat, but God got busy with planning his next religion" << std::endl;
 		std::cout << "and forgot to shrink the animals." << std::endl;
 		std::cout << "Noah decided to teach God a lesson, and only brought some grain," << std::endl;
-		std::cout << "6 Deers and 2 Wolves to his boat." << std::endl << std::endl;
+		std::cout << Deer.Pop << " Deers and "<< Wolf.Pop << " Wolves to his boat." << std::endl << std::endl;
 		std::cout << "Here is what happened next according to Noah's Diary:" << std::endl << std::endl;
 	}
 	// Routine:
@@ -346,10 +348,9 @@ int main( int argc, char *argv[])
 		{
 			pNoah(&NowPrecip, NowMonth , &NowTemp, seed);
 		}
-//		#pragma omp section
-//		{
-//			Watcher(&NowPrecip, NowMonth , &NowTemp, seed);
-//		}
+		// Please note the reason the weather is not run is because it is called in Noah
+		// agent, Noah controls the weather! (he is a profit after all!)
+
 		// implied barrier
 	}
 	// End of routine
