@@ -1,0 +1,27 @@
+- GPU does not have stack 
+- a thread is a work item and runs on a processing element 
+ - no flow control
+ - no return address
+ - no stack
+
+OpenCL events:
+- Placing a barrier in command queue
+- cl_event waitMarker
+- status = clEnqueueMarker(cmddQueue, &waitmarker);
+- clWaitForEvents(2,dependencies)
+ - This blocks
+- void Wait {function}
+ - Uses a marker (barrier)
+ - has a cl_event wait object
+ - enqueues marker
+ - waits for this event and blocks
+ - if status is not CL_SUCCESS, it says it failed
+
+Statuses:
+- CL_QUEUED
+- CL_SUBMITTED
+- CL_RUNNING
+- CL_
+
+We can run several Kernels
+
